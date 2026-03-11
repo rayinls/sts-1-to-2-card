@@ -1,4 +1,13 @@
-# sts-1-to-2-card
+复刻1代的部分卡牌目前完成
+ 战士
+ -进化
+ 猎人
+ -全神贯注
+
+
+
+
+说明：
 图片格式为 cards文件名英文小写单词_文件名英文小写单词 
  如GreenConcentrate为green_concentrate
 
