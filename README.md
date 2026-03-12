@@ -25,8 +25,9 @@
 
 添加卡牌需要注册，power不需要
  如ModHelper.AddModelToPool<角色CardPool, 卡牌路径>();
- 四个角色和无色卡分别为ironclad,silent,regrent,necrobinder,colorless
-        ModHelper.AddModelToPool<SilentCardPool, src.green.cards.GreenConcentrate>();
+
+四个角色和无色卡分别为ironclad,silent,regrent,necrobinder,colorless
+ 如ModHelper.AddModelToPool<SilentCardPool, src.green.cards.GreenConcentrate>();
 
 卡如果施加power数值，本地化写法为{Power文件名:diff()}
  如 每当你抽到一张状态牌时，抽{RedEvolvePower:diff()}张牌。
@@ -37,6 +38,8 @@ power里数值的本地化写法为[blue]{Amount}[/blue]
 
 
 引用
-https://github.com/Alchyr/BaseLib-StS2
-https://github.com/GlitchedReme/SlayTheSpire2ModdingTutorials
+
+参考文献 
+https://github.com/Alchyr/BaseLib-StS2 
+https://github.com/GlitchedReme/SlayTheSpire2ModdingTutorials 
 https://github.com/rayinls/STS2_Learner
