@@ -20,11 +20,3 @@
 power里数值的本地化写法为[blue]{Amount}[/blue]
  如 每当你抽到一张[gold]状态牌[/gold]时，抽[blue]{Amount}[/blue]张牌。
 
-
-
-引用
-
-参考文献 
-https://github.com/Alchyr/BaseLib-StS2 
-https://github.com/GlitchedReme/SlayTheSpire2ModdingTutorials 
-https://github.com/rayinls/STS2_Learner

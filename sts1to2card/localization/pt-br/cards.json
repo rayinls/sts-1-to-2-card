@@ -1,0 +1,127 @@
+{ 
+    "GREEN_CONCENTRATE.description": "Descarte {Cards:diff()} cartas.\nReceba {Energy:energyIcons()}.",
+    "GREEN_CONCENTRATE.title": "Concentrar",
+
+    "GREEN_CRIPPLING_POISON.description": "Aplique {PoisonPower:diff()} de [gold]Veneno[/gold] e 2 de [gold]Fraqueza[/gold] a TODOS os inimigos.",
+    "GREEN_CRIPPLING_POISON.title": "Veneno Incapacitante",
+    
+    "GREEN_CATALYST.description": "{IfUpgraded:show:Triplique|Dobre} o [gold]Veneno[/gold] de um inimigo.",
+    "GREEN_CATALYST.title": "Catalisador",
+
+    "GREEN_CORPSE_EXPLOSION.description": "Aplique {PoisonPower:diff()} de [gold]Veneno[/gold].\nQuando o inimigo morrer, cause dano igual a seu HP Máximo a TODOS os inimigos.",
+    "GREEN_CORPSE_EXPLOSION.title": "Corpo Explosivo",
+    
+    "RED_RECKLESS_CHARGE.description": "Cause {Damage:diff()} de dano.\nEmbaralhe uma [gold]Desorientação[/gold] na sua [gold]Pilha de Compra[/gold].",
+    "RED_RECKLESS_CHARGE.title": "Ataque Imprudente",
+
+    "RED_WILD_STRIKE.description": "Cause {Damage:diff()} de dano.\nEmbaralhe um [gold]Ferimento[/gold] na sua [gold]Pilha de Compra[/gold].",
+    "RED_WILD_STRIKE.title": "Ataque Selvagem",
+
+    "RED_DROP_KICK.description": "Cause {Damage:diff()} de dano.\nSe um inimigo estiver [gold]Vulnerável[/gold], receba {Energy:energyIcons()} e compre 1 carta.",
+    "RED_DROP_KICK.title": "Voadora",
+
+    "RED_CARNAGE.description": "Cause {Damage:diff()} de dano.",
+    "RED_CARNAGE.title": "Carnificina",
+
+    "RED_BLOOD_FOR_BLOOD.description": "Cause {Damage:diff()} de dano. \nEssa carta custa 1 {Energy:energyIcons()} a menos cada vez que você perder PV neste combate.",
+    "RED_BLOOD_FOR_BLOOD.title": "Sangue por Sangue",
+
+    "RED_SEVER_SOUL.description": "[gold]Exaure[/gold] todas as cartas que não sejam Ataques da sua [gold]Mão[/gold]. \nCause {Damage:diff()} de dano. ",
+    "RED_SEVER_SOUL.title": "Romper Alma",
+
+    "RED_IMMOLATE.description": "Cause {Damage:diff()} de dano a TODOS os inimigos.\nAdicione uma [gold]Queimadura[/gold] na sua [gold]Pilha de Descarte[/gold].",
+    "RED_IMMOLATE.title": "Imolar",
+
+    "RED_REAPER.description": "Cause {Damage:diff()} de dano a TODOS os inimigos. \nCure PVs equivalentes a quantidade de dano não bloqueado.",
+    "RED_REAPER.title": "Ceifador",
+
+    "RED_DISARM.description": "O inimigo perde {EnemyStrengthLoss:diff()} de [gold]Força[/gold].",
+    "RED_DISARM.title": "Desarmar",
+    
+    "RED_INTIMIDATE.description": "Aplique {WeakPower:diff()} de [gold]Fraqueza[/gold] a TODOS os inimigos.",
+    "RED_INTIMIDATE.title": "Intimidar",
+
+    "RED_EXHUME.selectionScreenPrompt": "Escolha uma carta para adicionar na sua mão.",
+    "RED_EXHUME.description": "Coloque uma carta da sua pilha de [gold]Cartas Exauridas[/gold] na sua [gold]Mão[/gold].",
+    "RED_EXHUME.title": "Exumar",
+
+    "RED_SEEING_RED.description": "Receba {Energy:energyIcons()}.",
+    "RED_SEEING_RED.title": "Seeing Red",
+
+    "RED_SENTINEL.description": "Receba {Block:diff()} de [gold]Proteção[/gold].\nSe essa carta for [gold]Exaurida[/gold], receba {Energy:energyIcons()}.",
+    "RED_SENTINEL.title": "Sentinela",
+
+    "RED_GHOSTLY_ARMOR.description": "Receba {Block:diff()} de [gold]Proteção[/gold].",
+    "RED_GHOSTLY_ARMOR.title": "Armadura Fantasma",
+    
+    "RED_POWER_THROUGH.description": "Adicione 2 [gold]Ferimentos[/gold] na sua [gold]Mão[/gold]. Receba {Block:diff()} de [gold]Proteção[/gold].",
+    "RED_POWER_THROUGH.title": "Nem doeu",
+
+    "RED_FLEX.description": "Receba {StrengthPower:diff()} de [gold]Força[/gold] neste turno.",
+    "RED_FLEX.title": "Flexão",
+
+    "RED_SPOT_WEAKNESS.description": "Se um inimigo pretende atacar,\nreceba {StrengthPower:diff()} de [gold]Força[/gold].",
+    "RED_SPOT_WEAKNESS.title": "Achar Ponto Fraco",
+
+    "RED_LIMIT_BREAK.description": "Dobre sua [gold]Força[/gold].",
+    "RED_LIMIT_BREAK.title": "Sem limites",
+
+    "RED_EVOLVE.description": "Sempre que comprar uma carta de Condição, compre {RedEvolvePower:diff()} carta(s).",
+    "RED_EVOLVE.title": "Evoluir",
+
+    "RED_BERSERK.description": "Receba {VulnerablePower:diff()} de [gold]Vulnerabilidade[/gold].\nNo começo de cada turno, receba {Energy:energyIcons()}.",
+    "RED_BERSERK.title": "Furioso",
+        
+    "RED_BRUTALITY.description": "No começo do seu turno, perca 1 PV e compre {RedBrutalityPower:diff()} carta(s).",
+    "RED_BRUTALITY.title": "Brutalidade",
+
+    "RED_DUAL_WIELD.description": "Escolha uma carta de Ataque ou Poder. Adicione {IfUpgraded:show:{Cards} cópias|uma cópia} desta carta na sua [gold]Mão[/gold].",
+    "RED_DUAL_WIELD.selectionScreenPrompt": "Escolha uma carta para copiar.",
+    "RED_DUAL_WIELD.title": "Um é pouco",
+
+    "RED_ENTRENCH.description": "Dobre sua [gold]Proteção[/gold] atual.",
+    "RED_ENTRENCH.title": "Refugiar",
+
+    "RED_CLASH.description": "Só pode ser jogada se todas as outras cartas na sua [gold]Mão[/gold] forem Ataques.\nCause {Damage:diff()} de dano.",
+    "RED_CLASH.title": "Confronto",
+
+    "GREEN_OUTMANEUVER.description": "Receba {Energy:energyIcons()} no próximo turno.",
+    "GREEN_OUTMANEUVER.title": "Obter Vantagem",
+
+    "GREEN_DISTRACTION.description": "Adicione uma Técnica aleatória na sua [gold]Mão[/gold]. Ela custa 0 neste turno.",
+    "GREEN_DISTRACTION.title": "Distração",
+
+    "GREEN_CALTROPS.description": "Receba {ThornsPower:diff()} de [gold]Espinhos[/gold].",
+    "GREEN_CALTROPS.title": "Armadilha de Espinhos",
+
+    "RED_WARCRY.description": "Compre {Cards:diff()} carta(s).\nColoque uma carta da sua [gold]Mão[/gold] no topo da sua [gold]Pilha de Compra[/gold].",
+    "RED_WARCRY.selectionScreenPrompt": "Escolha uma carta para colocar no topo da sua pilha de compra.",
+    "RED_WARCRY.title": "Grito de Guerra",
+
+    "RED_CLEAVE.description": "Cause {Damage:diff()} de dano a TODOS os inimigos.",
+    "RED_CLEAVE.title": "Golpe Giratório",
+
+    "RED_CLOTHESLINE.description": "Cause {Damage:diff()} de dano.\nAplique {WeakPower:diff()} de [gold]Fraqueza[/gold].",
+    "RED_CLOTHESLINE.title": "Golpe Pesado",
+
+    "RED_HEAVY_BLADE.description": "Cause {CalculatedDamage:diff()} de dano.\n[gold]Força[/gold] é aplicada {StrengthMultiplier:diff()} vezes nesta carta.",
+    "RED_HEAVY_BLADE.title": "Lâmina Pesada",
+
+    "RED_METALLICIZE.description": "Receba [blue]{RedMetallicizePower:diff()}[/blue] de [gold]Metalizar[/gold].",
+    "RED_METALLICIZE.title": "Metalizar",
+
+    "RED_PUMMEL.description": "Cause {Damage:diff()} de dano {Hits:diff()} vezes.",
+    "RED_PUMMEL.title": "Golpes Rápidos",
+
+    "RED_SEARING_BLOW.description": "Cause {Damage:diff()} de dano.\nPode ser aprimorada múltiplas vezes.",
+    "RED_SEARING_BLOW.title": "Golpe Ardente",
+
+    "RED_SHOCKWAVE.description": "Aplique {Power:diff()} de [gold]Fraqueza[/gold] e [gold]Vulnerabilidade[/gold] a TODOS os inimigos.",
+    "RED_SHOCKWAVE.title": "Onda de Choque",
+
+    "RED_FIRE_BREATHING.title": "Respiração de Fogo",
+    "RED_FIRE_BREATHING.description": "Sempre que comprar uma carta de [gold]Status[/gold] ou [gold]Maldição[/gold], cause {RedFireBreathingPower:diff()} de dano a TODOS os inimigos.",
+
+    "RED_COMBUST.title": "Combustão",
+    "RED_COMBUST.description": "No final do seu turno, perca 1 PV e cause {RedCombustPower:diff()} de dano a TODOS os inimigos."
+}

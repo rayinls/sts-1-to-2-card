@@ -1,6 +1,6 @@
 {
 	"RED_EVOLVE_POWER.description": "Whenever you draw a [gold]Status[/gold] card, draw more cards.",
-	"RED_EVOLVE_POWER.smartDescription": "Whenever you draw a [gold]Status[/gold] card, draw [blue]{Amount}[/blue] card(s).",
+	"RED_EVOLVE_POWER.smartDescription": "Whenever you draw a [gold]Status[/gold] card, draw [blue]{Amount}[/blue] cards.",
 	"RED_EVOLVE_POWER.title": "Evolve",
 
 	"RED_FLEX_POWER.description": "Gain [gold]Strength[/gold] until the end of this turn.",
@@ -8,14 +8,26 @@
 	"RED_FLEX_POWER.title": "Flex",
 
 	"RED_BRUTALITY_POWER.description": "At the start of your turn, lose HP and draw [blue]1[/blue] card.",
-	"RED_BRUTALITY_POWER.smartDescription": "At the start of your turn, lose [blue]{SelfDamage}[/blue] HP and draw [blue]{Amount}[/blue] card(s).",
+	"RED_BRUTALITY_POWER.smartDescription":"At the start of your turn, lose [blue]{SelfDamage}[/blue] HP and draw [blue]{Amount}[/blue] cards.",
 	"RED_BRUTALITY_POWER.title": "Brutality",
 
 	"RED_BERSERK_POWER.description": "At the start of each turn, gain [blue]1[/blue] [gold]Energy[/gold].",
-	"RED_BERSERK_POWER.smartDescription": "At the start of each turn, gain {Amount:energyIcons()}.",
+	"RED_BERSERK_POWER.smartDescription":"At the start of each turn, gain {Amount:energyIcons()}.",
 	"RED_BERSERK_POWER.title": "Berserk",
 
-	"GREEN_CORPSE_EXPLOSION_POWER.description": "When this enemy dies, deal damage equal to its max HP to ALL enemies.",
-	"GREEN_CORPSE_EXPLOSION_POWER.smartDescription": "When this enemy dies, deal damage equal to its max HP to ALL enemies.",
-	"GREEN_CORPSE_EXPLOSION_POWER.title": "Corpse Explosion"
+	"GREEN_CORPSE_EXPLOSION_POWER.description": "When this enemy dies, deal damage equal to its Max HP to ALL enemies.",
+	"GREEN_CORPSE_EXPLOSION_POWER.smartDescription": "When [gold]{OwnerName}[/gold] dies, deal damage equal to [blue]{Amount}[/blue] times its Max HP to ALL enemies.",
+	"GREEN_CORPSE_EXPLOSION_POWER.title": "Corpse Explosion",
+
+    "RED_METALLICIZE_POWER.description": "At the end of your turn, gain [gold]Block[/gold].",
+    "RED_METALLICIZE_POWER.smartDescription": "At the end of your turn, gain [blue]{Amount}[/blue] [gold]Block[/gold].",
+    "RED_METALLICIZE_POWER.title": "Metallicize",
+
+    "RED_FIRE_BREATHING_POWER.description": "Whenever you draw a [gold]Status[/gold] or [gold]Curse[/gold], deal damage to ALL enemies.",
+    "RED_FIRE_BREATHING_POWER.smartDescription": "Whenever you draw a [gold]Status[/gold] or [gold]Curse[/gold], deal [blue]{Amount}[/blue] damage to ALL enemies.",
+	"RED_FIRE_BREATHING_POWER.title": "Fire Breathing",
+
+    "RED_COMBUST_POWER.description": "At the end of your turn, lose HP and deal damage to ALL enemies.",
+    "RED_COMBUST_POWER.smartDescription": "At the end of your turn, lose 1 HP and deal [blue]{Amount}[/blue] damage to ALL enemies.",
+	"RED_COMBUST_POWER.title": "Combust"
 }

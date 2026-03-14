@@ -1,0 +1,33 @@
+{
+	"RED_EVOLVE_POWER.description": "Sempre que comprar uma carta de [gold]Condição[/gold], compre outra carta.",
+	"RED_EVOLVE_POWER.smartDescription": "Sempre que comprar uma carta de [gold]Condição[/gold], compre [blue]{Amount}[/blue] carta(s).",
+	"RED_EVOLVE_POWER.title": "Evoluir",
+
+	"RED_FLEX_POWER.description": "Receba [gold]Força[/gold] até o final deste turno.",
+	"RED_FLEX_POWER.smartDescription": "Receba [blue]{Amount}[/blue] de [gold]Força[/gold] até o final deste turno.",
+	"RED_FLEX_POWER.title": "Flexão",
+
+	"RED_BRUTALITY_POWER.description": "No começo do seu turno, perca PV e compre [blue]1[/blue] carta.",
+	"RED_BRUTALITY_POWER.smartDescription": "No começo do seu turno, perca [blue]{SelfDamage}[/blue] PV(s) e compre [blue]{Amount}[/blue] carta(s).",
+	"RED_BRUTALITY_POWER.title": "Brutalidade",
+
+	"RED_BERSERK_POWER.description": "No começo do seu turno, receba [blue]1[/blue] [gold]Energia[/gold].",
+	"RED_BERSERK_POWER.smartDescription": "No começo do seu turno, receba {Amount:energyIcons()}.",
+	"RED_BERSERK_POWER.title": "Furioso",
+
+	"GREEN_CORPSE_EXPLOSION_POWER.description": "Quando este inimigo morrer, cause dano igual ao seu PV Máximo a TODOS os inimigos.",
+	"GREEN_CORPSE_EXPLOSION_POWER.smartDescription": "Quando este inimigo morrer, cause dano igual ao seu PV Máximo a TODOS os inimigos.",
+	"GREEN_CORPSE_EXPLOSION_POWER.title": "Corpo Explosivo",
+
+    "RED_METALLICIZE_POWER.description": "No final do seu turno, receba [gold]Proteção[/gold].",
+    "RED_METALLICIZE_POWER.smartDescription": "No final do seu turno, receba [blue]{Amount}[/blue] de [gold]Proteção[/gold].",
+    "RED_METALLICIZE_POWER.title": "Metalizar",
+
+    "RED_FIRE_BREATHING_POWER.description": "Sempre que comprar uma carta de [gold]Condição[/gold] ou [gold]Maldição[/gold], cause dano a TODOS os inimigos.",
+    "RED_FIRE_BREATHING_POWER.smartDescription": "Sempre que comprar uma carta de [gold]Condição[/gold] ou [gold]Maldição[/gold], cause [blue]{Amount}[/blue] de dano a TODOS os inimigos.",
+    "RED_FIRE_BREATHING_POWER.title": "Respiração de Fogo",
+
+    "RED_COMBUST_POWER.description": "No final do seu turno, perca PV e cause dano a TODOS os inimigos.",
+    "RED_COMBUST_POWER.smartDescription": "No final do seu turno, perca 1 PV e cause [blue]{Amount}[/blue] de dano a TODOS os inimigos.",
+    "RED_COMBUST_POWER.title": "Combustão"
+}

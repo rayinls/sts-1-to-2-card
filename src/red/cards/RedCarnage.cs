@@ -2,8 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Godot;
-using MegaCrit.Sts2.Core.Combat;
-using MegaCrit.Sts2.Core.Combat.History.Entries;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
@@ -14,41 +12,38 @@ using MegaCrit.Sts2.Core.Nodes.Rooms;
 using MegaCrit.Sts2.Core.Nodes.Vfx.Cards;
 using MegaCrit.Sts2.Core.ValueProps;
 using MegaCrit.Sts2.Core.Models;
-using MegaCrit.Sts2.Core.HoverTips;
 
 namespace sts1to2card.src.red.cards;
 
 public sealed class RedCarnage : CardModel
 {
-    // 设置伤害动态变量
-    protected override IEnumerable<DynamicVar> CanonicalVars => new List<DynamicVar>
-    {
-        new DamageVar(20m, ValueProp.Move) // 初始伤害20
-    };
+    protected override IEnumerable<DynamicVar> CanonicalVars =>
+        new List<DynamicVar>
+        {
+            new DamageVar(20m, ValueProp.Move)
+        };
 
-    // 虚无提示
-    protected override IEnumerable<IHoverTip> ExtraHoverTips => new List<IHoverTip>
-    {
-        HoverTipFactory.FromKeyword(CardKeyword.Ethereal)
-    };
+    // 真正生效虚无要通过卡牌关键词，而不是仅添加 HoverTip。
+    public override IEnumerable<CardKeyword> CanonicalKeywords =>
+        new List<CardKeyword>
+        {
+            CardKeyword.Ethereal
+        };
 
     public RedCarnage()
-        : base(2, CardType.Attack, CardRarity.Uncommon, TargetType.AnyEnemy)
+        : base(2, CardType.Attack, CardRarity.Uncommon, TargetType.AnyEnemy, true)
     {
     }
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        ArgumentNullException.ThrowIfNull(cardPlay.Target, "cardPlay.Target");
+        ArgumentNullException.ThrowIfNull(cardPlay.Target, nameof(cardPlay.Target));
 
-        // 播放施法动画
         await CreatureCmd.TriggerAnim(base.Owner.Creature, "Cast", base.Owner.Character.AttackAnimDelay);
 
-        // 播放特效
-        ((Node)(object)NCombatRoom.Instance?.CombatVfxContainer)
-            .AddChildSafely((Node?)(object)NSpikeSplashVfx.Create(cardPlay.Target));
+        ((Node)NCombatRoom.Instance?.CombatVfxContainer)
+            .AddChildSafely(NSpikeSplashVfx.Create(cardPlay.Target));
 
-        // 对目标造成伤害，并使用 Stomp 风格的特效和音效
         await DamageCmd.Attack(base.DynamicVars.Damage.BaseValue)
             .FromCard(this)
             .Targeting(cardPlay.Target)

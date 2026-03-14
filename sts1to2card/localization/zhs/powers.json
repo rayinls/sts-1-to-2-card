@@ -16,6 +16,20 @@
 	"RED_BERSERK_POWER.title": "狂暴",
 
 	"GREEN_CORPSE_EXPLOSION_POWER.description": "当这名敌人死亡时，对所有敌人造成等于其最大生命值的伤害。",
-	"GREEN_CORPSE_EXPLOSION_POWER.smartDescription": "当这名敌人死亡时，对所有敌人造成等于其最大生命值的伤害。",
-	"GREEN_CORPSE_EXPLOSION_POWER.title": "尸爆术"
+	"GREEN_CORPSE_EXPLOSION_POWER.smartDescription": "当[gold]{OwnerName}[/gold]死亡时，对所有敌人造成等于其最大生命值[blue]{Amount}[/blue]倍的伤害。",
+	"GREEN_CORPSE_EXPLOSION_POWER.title": "尸爆术",
+
+    "RED_METALLICIZE_POWER.description": "在你的回合结束时获得[gold]格挡[/gold]。",
+    "RED_METALLICIZE_POWER.smartDescription": "在你的回合结束时获得[blue]{Amount}[/blue]点[gold]格挡[/gold]。",
+    "RED_METALLICIZE_POWER.title": "金属化",
+
+
+    "RED_FIRE_BREATHING_POWER.description": "每当你抽到一张[gold]状态牌[/gold]或[gold]诅咒牌[/gold]时，对所有敌人造成伤害。",
+    "RED_FIRE_BREATHING_POWER.smartDescription": "每当你抽到一张状态牌或诅咒牌时，对所有敌人造成[blue]{Amount}[/blue]点伤害。",
+	"RED_FIRE_BREATHING_POWER.title": "火焰吐吸",
+
+
+    "RED_COMBUST_POWER.description": "在你的回合结束时，失去生命并对所有敌人造成伤害。",
+    "RED_COMBUST_POWER.smartDescription": "在你的回合结束时，失去1点生命，对所有敌人造成[blue]{Amount}[/blue]点伤害。",
+	"RED_COMBUST_POWER.title": "自燃"
 }

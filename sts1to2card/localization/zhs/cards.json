@@ -1,96 +1,127 @@
 {
-    "GREEN_CONCENTRATE.description": "Discard {Cards:diff()} cards.\nGain {Energy:energyIcons()}.",
-    "GREEN_CONCENTRATE.title": "Concentrate",
+    "GREEN_CONCENTRATE.description": "丢弃{Cards:diff()}张牌。\n获得{Energy:energyIcons()}。",
+    "GREEN_CONCENTRATE.title": "全神贯注",
 
-    "GREEN_CRIPPLING_POISON.description": "Apply {PoisonPower:diff()} [gold]Poison[/gold] and 2 [gold]Weak[/gold] to ALL enemies.",
-    "GREEN_CRIPPLING_POISON.title": "Crippling Poison",
+    "GREEN_CRIPPLING_POISON.description": "给予所有敌人{PoisonPower:diff()}层[gold]中毒[/gold]和2层[gold]虚弱[/gold]。",
+    "GREEN_CRIPPLING_POISON.title": "致残毒云",
     
-    "GREEN_CATALYST.description": "Double {IfUpgraded:show:triple|double} an enemy's [gold]Poison[/gold].",
-    "GREEN_CATALYST.title": "Catalyst",
+    "GREEN_CATALYST.description": "将一名敌人的[gold]中毒[/gold]层数{IfUpgraded:show:变为三倍|翻倍}。",
+    "GREEN_CATALYST.title": "催化剂",
 
-    "GREEN_CORPSE_EXPLOSION.description": "Apply {PoisonPower:diff()} [gold]Poison[/gold].\nWhen the enemy dies, deal damage equal to its max HP to ALL enemies.",
-    "GREEN_CORPSE_EXPLOSION.title": "Corpse Explosion",
+    "GREEN_CORPSE_EXPLOSION.description": "给予{PoisonPower:diff()}层[gold]中毒[/gold]。\n当这名敌人死亡时，对所有敌人造成等于其最大生命值的伤害。",
+    "GREEN_CORPSE_EXPLOSION.title": "尸爆术",
+
+	"RED_RECKLESS_CHARGE.description": "造成{Damage:diff()}点伤害。\n将一张[gold]晕眩[/gold]放入你的[gold]抽牌堆[/gold]中。",
+	"RED_RECKLESS_CHARGE.title": "无谋冲锋",
+
+    "RED_WILD_STRIKE.description": "造成{Damage:diff()}点伤害。\n将一张[gold]伤口[/gold]放入你的[gold]抽牌堆[/gold]中。",
+	"RED_WILD_STRIKE.title": "狂野打击",
+
+    "RED_WARCRY.description": "抽{Cards:diff()}张牌。\n将[gold]手牌[/gold]中的一张牌放到你的[gold]抽牌堆[/gold]顶部。",
+    "RED_WARCRY.selectionScreenPrompt": "选择一张牌放到你的抽牌堆顶。",
+    "RED_WARCRY.title": "战吼",
+
+    "RED_CLEAVE.description": "对所有敌人造成{Damage:diff()}点伤害。",
+    "RED_CLEAVE.title": "顺劈斩",
+
+    "RED_CLOTHESLINE.description": "造成{Damage:diff()}点伤害。\n给予{WeakPower:diff()}层[gold]虚弱[/gold]。",
+    "RED_CLOTHESLINE.title": "金刚臂",
     
-    "RED_RECKLESS_CHARGE.description": "Deal {Damage:diff()} damage.\nShuffle a [gold]Dazed[/gold] into your [gold]draw pile[/gold].",
-    "RED_RECKLESS_CHARGE.title": "Reckless Charge",
+    "RED_HEAVY_BLADE.description": "造成{CalculatedDamage:diff()}点伤害。\n[gold]力量[/gold]在重刃上发挥{StrengthMultiplier:diff()}倍效果。",
+    "RED_HEAVY_BLADE.title": "重刃",
 
-    "RED_WILD_STRIKE.description": "Deal {Damage:diff()} damage.\nShuffle a [gold]Wound[/gold] into your [gold]draw pile[/gold].",
-    "RED_WILD_STRIKE.title": "Wild Strike",
+    "RED_METALLICIZE.description": "在你的回合结束时，获得[blue]{RedMetallicizePower:diff()}[/blue]点[gold]格挡[/gold]。",
+    "RED_METALLICIZE.title": "金属化",
 
-    "RED_DROP_KICK.description": "Deal {Damage:diff()} damage.\nIf the enemy has [gold]Vulnerable[/gold], gain {Energy:energyIcons()} and draw 1 card.",
-    "RED_DROP_KICK.title": "Dropkick",
+    "RED_PUMMEL.description": "造成{Damage:diff()}点伤害{Hits:diff()}次。",
+    "RED_PUMMEL.title": "连续拳",
 
-    "RED_CARNAGE.description": "Deal {Damage:diff()} damage.",
-    "RED_CARNAGE.title": "Carnage",
+    "RED_SEARING_BLOW.description": "造成{Damage:diff()}点伤害。可以被多次升级",
+    "RED_SEARING_BLOW.title": "灼热打击",
 
-    "RED_BLOOD_FOR_BLOOD.description": "This card costs 1 less {Energy:energyIcons()} for each time you lose HP in combat.\nDeal {Damage:diff()} damage.",
-    "RED_BLOOD_FOR_BLOOD.title": "Blood for Blood",
+    "RED_SHOCKWAVE.description": "给予所有敌人{Power:diff()}层[gold]虚弱[/gold]和[gold]易伤[/gold]。",
+    "RED_SHOCKWAVE.title": "震荡波",
 
-    "RED_SEVER_SOUL.description": "[gold]Exhaust[/gold] all non-Attack cards in your [gold]hand[/gold]. Deal {Damage:diff()} damage.",
-    "RED_SEVER_SOUL.title": "Sever Soul",
+    "RED_FIRE_BREATHING.title": "火焰吐吸",
+    "RED_FIRE_BREATHING.description": "每当你抽到一张[gold]状态[/gold]或[gold]诅咒[/gold]牌时，对所有敌人造成{RedFireBreathingPower:diff()}点伤害。",
 
-    "RED_IMMOLATE.description": "Deal {Damage:diff()} damage to ALL enemies.\nAdd a [gold]Burn[/gold] into your [gold]discard pile[/gold].",
-    "RED_IMMOLATE.title": "Immolate",
+    "RED_COMBUST.title": "自燃",
+    "RED_COMBUST.description": "在你的回合结束时，失去1点生命，对所有敌人造成{RedCombustPower:diff()}点伤害。",
+  
+    "RED_DROP_KICK.description": "造成{Damage:diff()}点伤害。\n如果敌人有[gold]易伤[/gold]状态 ，获得{Energy:energyIcons()}并且抽1张牌。",
+	"RED_DROP_KICK.title": "飞身踢",
 
-    "RED_REAPER.description": "Deal {Damage:diff()} damage to ALL enemies.\nHeal HP equal to unblocked damage dealt.",
-    "RED_REAPER.title": "Reaper",
+    "RED_CARNAGE.description": "造成{Damage:diff()}点伤害。",
+	"RED_CARNAGE.title": "残杀",
 
-    "RED_DISARM.description": "Enemy loses {EnemyStrengthLoss:diff()} [gold]Strength[/gold].",
-    "RED_DISARM.title": "Disarm",
+    "RED_BLOOD_FOR_BLOOD.description": "你每在战斗中失去生命一次，这张牌的耗能就减少{energyPrefix:energyIcons(1)}。\n造成{Damage:diff()}点伤害。",
+	"RED_BLOOD_FOR_BLOOD.title": "以血还血",
+
+    "RED_SEVER_SOUL.description": "[gold]消耗[/gold][gold]手牌[/gold]中所有非攻击牌，造成{Damage:diff()}点伤害。",
+    "RED_SEVER_SOUL.title": "断魂斩",
+
+    "RED_IMMOLATE.description": "对所有敌人造成{Damage:diff()}点伤害。\n将1张[gold]灼伤[/gold]放入你的[gold]弃牌堆[/gold]中。",
+    "RED_IMMOLATE.title":"燔祭",
+
+    "RED_REAPER.description": "对所有敌人造成{Damage:diff()}点伤害。\n未被[gold]格挡[/gold]的伤害将回复你的生命。",
+    "RED_REAPER.title":"死亡收割",
+
+    "RED_DISARM.description": "使敌人失去{EnemyStrengthLoss:diff()}点[gold]力量[/gold]。",
+    "RED_DISARM.title":"缴械",
     
-    "RED_INTIMIDATE.description": "Apply {WeakPower:diff()} [gold]Weak[/gold] to ALL enemies.",
-    "RED_INTIMIDATE.title": "Intimidate",
+    "RED_INTIMIDATE.description": "给予所有敌人{WeakPower:diff()}层[gold]虚弱[/gold]。",
+    "RED_INTIMIDATE.title":"威吓",
 
-    "RED_EXHUME.selectionScreenPrompt": "Choose a card to add to your hand.",
-    "RED_EXHUME.description": "Put a card from the [gold]Exhaust[/gold] pile into your [gold]hand[/gold].",
-    "RED_EXHUME.title": "Exhume",
+    "RED_EXHUME.selectionScreenPrompt": "选择一张牌加入你的手牌。",
+    "RED_EXHUME.description": "选择一张已[gold]消耗[/gold]的牌，将其放入你的[gold]手牌[/gold]。",
+	"RED_EXHUME.title": "发掘",
 
-    "RED_SEEING_RED.description": "Gain {Energy:energyIcons()}.",
-    "RED_SEEING_RED.title": "Seeing Red",
+    "RED_SEEING_RED.description": "获得{Energy:energyIcons()}。",
+    "RED_SEEING_RED.title": "盛怒",
 
-    "RED_SENTINEL.description": "Gain {Block:diff()} [gold]Block[/gold].\nIf this card is [gold]Exhausted[/gold], gain {Energy:energyIcons()}.",
-    "RED_SENTINEL.title": "Sentinel",
+    "RED_SENTINEL.description": "获得{Block:diff()}点[gold]格挡[/gold]。\n如果这张牌被[gold]消耗[/gold]，获得{Energy:energyIcons()}。",
+    "RED_SENTINEL.title": "哨卫",
 
-    "RED_GHOSTLY_ARMOR.description": "Gain {Block:diff()} [gold]Block[/gold].",
-    "RED_GHOSTLY_ARMOR.title": "Ghostly Armor",
+    "RED_GHOSTLY_ARMOR.description": "获得{Block:diff()}点[gold]格挡[/gold]。",
+	"RED_GHOSTLY_ARMOR.title": "幽灵铠甲",
     
-    "RED_POWER_THROUGH.description": "Add 2 [gold]Wounds[/gold] to your [gold]hand[/gold]. Gain {Block:diff()} [gold]Block[/gold].",
-    "RED_POWER_THROUGH.title": "Power Through",
+	"RED_POWER_THROUGH.description": "增加2张[gold]伤口[/gold]到你的[gold]手牌[/gold]。获得{Block:diff()}点[gold]格挡[/gold]。",
+	"RED_POWER_THROUGH.title": "硬撑",
 
-    "RED_FLEX.description": "Gain {StrengthPower:diff()} [gold]Strength[/gold] this turn.",
-    "RED_FLEX.title": "Flex",
+    "RED_FLEX.description": "在本回合获得{StrengthPower:diff()}点[gold]力量[/gold]。",
+    "RED_FLEX.title": "活动肌肉",
 
-    "RED_SPOT_WEAKNESS.description": "If an enemy intends to attack,\ngain {StrengthPower:diff()} [gold]Strength[/gold].",
-    "RED_SPOT_WEAKNESS.title": "Spot Weakness",
+    "RED_SPOT_WEAKNESS.description": "如果一名敌人的意图是攻击，\n你获得{StrengthPower:diff()}点[gold]力量[/gold]。",
+    "RED_SPOT_WEAKNESS.title": "观察弱点",
 
-    "RED_LIMIT_BREAK.description": "Double your [gold]Strength[/gold].",
-    "RED_LIMIT_BREAK.title": "Limit Break",
+    "RED_LIMIT_BREAK.description": "将你的[gold]力量[/gold]翻倍。",
+    "RED_LIMIT_BREAK.title":"突破极限",
 
-    "RED_EVOLVE.description": "Whenever you draw a Status card, draw {RedEvolvePower:diff()} card(s).",
-    "RED_EVOLVE.title": "Evolve",
+    "RED_EVOLVE.description": "每当你抽到一张[gold]状态牌[/gold]时，抽{RedEvolvePower:diff()}张牌。",
+	"RED_EVOLVE.title": "进化",
 
-    "RED_BERSERK.description": "Gain {VulnerablePower:diff()} [gold]Vulnerable[/gold].\nAt the start of each turn, gain {Energy:energyIcons()}.",
-    "RED_BERSERK.title": "Berserk",
+    "RED_BERSERK.description": "获得{VulnerablePower:diff()}层[gold]易伤[/gold]。\n每回合开始时获得{Energy:energyIcons()}",
+	"RED_BERSERK.title": "狂暴",
         
-    "RED_BRUTALITY.description": "At the start of your turn, lose 1 HP and draw {RedBrutalityPower:diff()} card(s).",
-    "RED_BRUTALITY.title": "Brutality",
+    "RED_BRUTALITY.description": "在你的回合开始时，你失去1点生命，抽{RedBrutalityPower:diff()}张牌。",
+	"RED_BRUTALITY.title": "残暴",
 
-    "RED_DUAL_WIELD.description": "Choose an Attack or Power card. Add {IfUpgraded:show:{Cards} copies|a copy} of that card into your [gold]hand[/gold].",
-    "RED_DUAL_WIELD.selectionScreenPrompt": "Choose a card to duplicate.",
-    "RED_DUAL_WIELD.title": "Dual Wield",
+    "RED_DUAL_WIELD.description": "选择一张攻击牌或能力牌。将{IfUpgraded:show:{Cards}张此牌的复制品|一张此牌的复制品}加入你的[gold]手牌[/gold]。",
+    "RED_DUAL_WIELD.selectionScreenPrompt": "选择一张牌复制。",
+    "RED_DUAL_WIELD.title": "双持",
 
-    "RED_ENTRENCH.description": "Double your current [gold]Block[/gold].",
-    "RED_ENTRENCH.title": "Entrench",
+    "RED_ENTRENCH.description": "将你当前的[gold]格挡[/gold]翻倍。",
+    "RED_ENTRENCH.title": "巩固",
 
-    "RED_CLASH.description": "Can only be played if every card in your [gold]hand[/gold] is an Attack.\nDeal {Damage:diff()} damage.",
-    "RED_CLASH.title": "Clash",
+    "RED_CLASH.description": "只有在[gold]手牌[/gold]中每一张牌都是攻击牌时才能被打出。\n造成{Damage:diff()}点伤害。",
+    "RED_CLASH.title": "交锋",
 
-    "GREEN_OUTMANEUVER.description": "Gain {Energy:energyIcons()} next turn.",
-    "GREEN_OUTMANEUVER.title": "Outmaneuver",
+    "GREEN_OUTMANEUVER.description": "在下个回合获得{Energy:energyIcons()}。",
+    "GREEN_OUTMANEUVER.title": "抢占先机",
 
-    "GREEN_DISTRACTION.description": "Add a random Skill into your [gold]hand[/gold]. It costs 0 this turn.",
-    "GREEN_DISTRACTION.title": "Distraction",
+    "GREEN_DISTRACTION.description": "将一张随机技能牌添加到你的[gold]手牌[/gold]中。这张牌在本回合内可以免费打出。",
+    "GREEN_DISTRACTION.title": "声东击西",
 
-    "GREEN_CALTROPS.description": "Whenever you are attacked, deal {ThornsPower:diff()} damage back.",
-    "GREEN_CALTROPS.title": "Caltrops"
+    "GREEN_CALTROPS.description": "每当你被攻击时，对攻击者造成{ThornsPower:diff()}点伤害。",
+    "GREEN_CALTROPS.title": "铁蒺藜"
 }
