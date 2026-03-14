@@ -1,11 +1,6 @@
 using HarmonyLib;
 using MegaCrit.Sts2.Core.Modding;
 using MegaCrit.Sts2.Core.Models.CardPools;
-using MegaCrit.Sts2.Core.Entities.Cards;
-using BaseLib.Config;
-using sts1to2card.Scripts;
-using System;
-using System.Linq;
 using System.Reflection;
 using MegaCrit.Sts2.Core.Models;
 
@@ -16,9 +11,6 @@ namespace sts1to2card.Scripts
     {
         public static void Init()
         {
-            // 注册配置
-            ModConfigRegistry.Register("sts1to2card", new ModConfig());
-
             // 自动注册卡牌
             RegisterCards();
         }
