@@ -1,0 +1,11 @@
+{
+    "SHARED_DEAD_BRANCH.description": "每当你[gold]消耗[/gold]一张牌，将一张随机卡牌加入你的[gold]手牌。",
+    "SHARED_DEAD_BRANCH.flavor": "一个早已被遗忘的时代所遗留下来的树木枝条。",
+    "SHARED_DEAD_BRANCH.title": "枯木树枝",
+    "SHARED_CLOCKWORK_SOUVENIR.description": "在每场战斗开始时，获得[blue]{ArtifactPower}[/blue]层[gold]人工制品[/gold]。",
+    "SHARED_CLOCKWORK_SOUVENIR.flavor": "“你看里面齿轮这么多，是不是很精巧。”",
+    "SHARED_CLOCKWORK_SOUVENIR.title": "齿轮工艺品",
+    "SHARED_ORANGE_PELLETS.description": "你每在同一回合内打出能力牌、攻击牌和技能牌各一张，移除你身上的所有负面效果。",
+    "SHARED_ORANGE_PELLETS.flavor": "“用塔里各处真菌做出来的药，包治百病！”",
+    "SHARED_ORANGE_PELLETS.title": "橙色药丸"
+}

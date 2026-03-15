@@ -1,4 +1,13 @@
 { 
+    "GREEN_HEEL_HOOK.description": "Cause {Damage:diff()} de dano.\nSe o inimigo estiver [gold]Fraco[/gold], receba {Energy:energyIcons()} e compre 1 carta.",
+    "GREEN_HEEL_HOOK.title": "Gancho de Calcanhar",
+
+    "GREEN_MASTERFUL_STAB.description": "Cause {Damage:diff()} de dano.\nSempre que você perder PV, esta carta custa {energyPrefix:energyIcons(1)} a mais neste combate.",
+    "GREEN_MASTERFUL_STAB.title": "Estocada Magistral",
+
+    "GREEN_UNLOAD.description": "Cause {Damage:diff()} de dano.\nDescarte todas as cartas que não sejam de Ataque.",
+    "GREEN_UNLOAD.title": "Descarregar",
+
     "GREEN_CONCENTRATE.description": "Descarte {Cards:diff()} cartas.\nReceba {Energy:energyIcons()}.",
     "GREEN_CONCENTRATE.title": "Concentrar",
 

@@ -1,4 +1,13 @@
 {
+    "GREEN_HEEL_HOOK.description": "Deal {Damage:diff()} damage.\nIf the enemy is [gold]Weak[/gold], gain {Energy:energyIcons()} and draw 1 card.",
+    "GREEN_HEEL_HOOK.title": "Heel Hook",
+
+    "GREEN_MASTERFUL_STAB.description": "Deal {Damage:diff()} damage.\nWhenever you lose HP, this card costs {energyPrefix:energyIcons(1)} more this combat.",
+    "GREEN_MASTERFUL_STAB.title": "Masterful Stab",
+
+    "GREEN_UNLOAD.description": "Deal {Damage:diff()} damage.\nDiscard all non-Attack cards.",
+    "GREEN_UNLOAD.title": "Unload",
+
     "GREEN_CONCENTRATE.description": "Discard {Cards:diff()} cards.\nGain {Energy:energyIcons()}.",
     "GREEN_CONCENTRATE.title": "Concentrate",
 

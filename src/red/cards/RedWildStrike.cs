@@ -14,6 +14,8 @@ namespace sts1to2card.src.red.cards;
 
 public sealed class RedWildStrike : CardModel
 {
+    protected override HashSet<CardTag> CanonicalTags =>
+        new HashSet<CardTag> { CardTag.Strike };
     // 显示伤害值
     protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
     {

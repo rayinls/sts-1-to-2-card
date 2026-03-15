@@ -18,7 +18,7 @@ public sealed class GreenOutmaneuver : CardModel
     protected override IEnumerable<DynamicVar> CanonicalVars => new List<DynamicVar> { new EnergyVar(2) };
 
     public GreenOutmaneuver()
-        : base(1, CardType.Skill, CardRarity.Uncommon, TargetType.Self)
+        : base(1, CardType.Skill, CardRarity.Common, TargetType.Self)
     {
     }
 

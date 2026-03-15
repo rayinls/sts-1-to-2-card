@@ -12,11 +12,14 @@ using MegaCrit.Sts2.Core.Nodes.Rooms;
 using MegaCrit.Sts2.Core.Nodes.Vfx;
 using MegaCrit.Sts2.Core.Nodes.Vfx.Utilities;
 using MegaCrit.Sts2.Core.ValueProps;
+using MegaCrit.Sts2.Core.Models;
 
-namespace MegaCrit.Sts2.Core.Models.Cards
+namespace sts1to2card.src.red.cards
 {
 	public sealed class RedSearingBlow : CardModel
 	{
+		protected override HashSet<CardTag> CanonicalTags =>
+            new HashSet<CardTag> { CardTag.Strike };
 		public RedSearingBlow()
 			: base(2, CardType.Attack, CardRarity.Uncommon, TargetType.AnyEnemy, true)
 		{

@@ -16,7 +16,7 @@ namespace sts1to2card.src.red.cards;
 	public sealed class RedClothesline : CardModel
 	{
 		public RedClothesline()
-			: base(2, CardType.Attack, CardRarity.Uncommon, TargetType.AnyEnemy, true)
+			: base(2, CardType.Attack, CardRarity.Common, TargetType.AnyEnemy, true)
 		{
 		}
 

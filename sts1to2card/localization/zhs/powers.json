@@ -1,4 +1,16 @@
 {
+	"GREEN_CHOKE_POWER.description": "你在这个回合内每打出一张牌，[gold]{OwnerName}[/gold]都会失去[blue]3[/blue]点生命。",
+	"GREEN_CHOKE_POWER.smartDescription": "你在这个回合内每打出一张牌，[gold]{OwnerName}[/gold]都会失去[blue]{Amount}[/blue]点生命。",
+    "GREEN_CHOKE_POWER.title": "勒脖",
+
+    "GREEN_A_THOUSAND_CUTS_POWER.description": "每当你打出一张牌，对所有敌人造成{Amount:diff()}点伤害。",
+    "GREEN_A_THOUSAND_CUTS_POWER.smartDescription": "每当你打出一张牌，对所有敌人造成[blue]{Amount}[/blue]点伤害。",
+	"GREEN_A_THOUSAND_CUTS_POWER.title": "凌迟",
+
+	"GREEN_CORPSE_EXPLOSION_POWER.description": "当这名敌人死亡时，对所有敌人造成等于其最大生命值的伤害。",
+	"GREEN_CORPSE_EXPLOSION_POWER.smartDescription": "当[gold]{OwnerName}[/gold]死亡时，对所有敌人造成等于其最大生命值[blue]{Amount}[/blue]倍的伤害。",
+	"GREEN_CORPSE_EXPLOSION_POWER.title": "尸爆术",
+
 	"RED_EVOLVE_POWER.description": "每当你抽到一张[gold]状态牌[/gold]时，抽更多牌。",
 	"RED_EVOLVE_POWER.smartDescription": "每当你抽到一张[gold]状态牌[/gold]时，抽[blue]{Amount}[/blue]张牌。",
 	"RED_EVOLVE_POWER.title": "进化",
@@ -14,10 +26,6 @@
 	"RED_BERSERK_POWER.description": "在每回合开始时获得[blue]1[/blue]点[gold]能量[/gold]",
 	"RED_BERSERK_POWER.smartDescription":"在每回合开始时获得{Amount:energyIcons()}。",
 	"RED_BERSERK_POWER.title": "狂暴",
-
-	"GREEN_CORPSE_EXPLOSION_POWER.description": "当这名敌人死亡时，对所有敌人造成等于其最大生命值的伤害。",
-	"GREEN_CORPSE_EXPLOSION_POWER.smartDescription": "当[gold]{OwnerName}[/gold]死亡时，对所有敌人造成等于其最大生命值[blue]{Amount}[/blue]倍的伤害。",
-	"GREEN_CORPSE_EXPLOSION_POWER.title": "尸爆术",
 
     "RED_METALLICIZE_POWER.description": "在你的回合结束时获得[gold]格挡[/gold]。",
     "RED_METALLICIZE_POWER.smartDescription": "在你的回合结束时获得[blue]{Amount}[/blue]点[gold]格挡[/gold]。",

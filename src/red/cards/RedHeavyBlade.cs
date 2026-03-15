@@ -13,8 +13,9 @@ using MegaCrit.Sts2.Core.Nodes.Rooms;
 using MegaCrit.Sts2.Core.Nodes.Vfx;
 using MegaCrit.Sts2.Core.Nodes.Vfx.Cards;
 using MegaCrit.Sts2.Core.Helpers;
+using MegaCrit.Sts2.Core.Models;
 
-namespace MegaCrit.Sts2.Core.Models.Cards
+namespace sts1to2card.src.red.cards
 {
 	public sealed class RedHeavyBlade : CardModel
 	{
@@ -75,7 +76,7 @@ namespace MegaCrit.Sts2.Core.Models.Cards
 		protected override void OnUpgrade()
 		{
 			base.DynamicVars.CalculationBase.UpgradeValueBy(3m);
-			base.DynamicVars["StrengthMultiplier"].BaseValue = 5m;
+			base.DynamicVars["StrengthMultiplier"].UpgradeValueBy(2m);
 		}
 	}
 }

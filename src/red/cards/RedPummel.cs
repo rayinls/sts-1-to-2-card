@@ -7,8 +7,9 @@ using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.ValueProps;
+using MegaCrit.Sts2.Core.Models;
 
-namespace MegaCrit.Sts2.Core.Models.Cards
+namespace sts1to2card.src.red.cards
 {
 	public sealed class RedPummel : CardModel
 	{
