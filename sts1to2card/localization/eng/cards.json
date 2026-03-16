@@ -1,24 +1,15 @@
 {
-    "GREEN_HEEL_HOOK.description": "Deal {Damage:diff()} damage.\nIf the enemy is [gold]Weak[/gold], gain {Energy:energyIcons()} and draw 1 card.",
-    "GREEN_HEEL_HOOK.title": "Heel Hook",
+    "COLORLESS_PANACEA.description": "Gain {ArtifactPower:diff()} [gold]Artifact[/gold].",
+    "COLORLESS_PANACEA.title": "Panacea",
 
-    "GREEN_MASTERFUL_STAB.description": "Deal {Damage:diff()} damage.\nWhenever you lose HP, this card costs {energyPrefix:energyIcons(1)} more this combat.",
-    "GREEN_MASTERFUL_STAB.title": "Masterful Stab",
+    "RED_CORRUPTION.description": "Skills cost 0{energyPrefix:energyIcons(1)}.\nWhenever you play a Skill, [gold]Exhaust[/gold] it.",
+    "RED_CORRUPTION.title": "Corruption",
 
-    "GREEN_UNLOAD.description": "Deal {Damage:diff()} damage.\nDiscard all non-Attack cards.",
-    "GREEN_UNLOAD.title": "Unload",
+    "RED_DARK_EMBRACE.description": "Whenever a card is [gold]Exhausted[/gold], draw 1 card.",
+    "RED_DARK_EMBRACE.title": "Dark Embrace",
 
-    "GREEN_CONCENTRATE.description": "Discard {Cards:diff()} cards.\nGain {Energy:energyIcons()}.",
-    "GREEN_CONCENTRATE.title": "Concentrate",
-
-    "GREEN_CRIPPLING_POISON.description": "Apply {PoisonPower:diff()} [gold]Poison[/gold] and 2 [gold]Weak[/gold] to ALL enemies.",
-    "GREEN_CRIPPLING_POISON.title": "Crippling Poison",
-    
-    "GREEN_CATALYST.description": "{IfUpgraded:show:Triple|Double} an enemy's [gold]Poison[/gold].",
-    "GREEN_CATALYST.title": "Catalyst",
-
-    "GREEN_CORPSE_EXPLOSION.description": "Apply {PoisonPower:diff()} [gold]Poison[/gold].\nWhen this enemy dies, deal damage equal to its Max HP to ALL enemies.",
-    "GREEN_CORPSE_EXPLOSION.title": "Corpse Explosion",
+    "RED_BLUDGEON.description": "Deal {Damage:diff()} damage.",
+    "RED_BLUDGEON.title": "Bludgeon",
 
 	"RED_RECKLESS_CHARGE.description": "Deal {Damage:diff()} damage.\nShuffle a [gold]Dazed[/gold] into your [gold]draw pile[/gold].",
 	"RED_RECKLESS_CHARGE.title": "Reckless Charge",
@@ -36,10 +27,10 @@
     "RED_CLOTHESLINE.description": "Deal {Damage:diff()} damage.\nApply {WeakPower:diff()} [gold]Weak[/gold].",
     "RED_CLOTHESLINE.title": "Clothesline",
     
-    "RED_HEAVY_BLADE.description": "Deal {CalculatedDamage:diff()} damage.\n[gold]Strength[/gold] is applied {StrengthMultiplier:diff()} times.",
+    "RED_HEAVY_BLADE.description": "Deal {CalculatedDamage:diff()} damage.\n[gold]Strength[/gold] affects Heavy Blade {StrengthMultiplier:diff()} times.",
     "RED_HEAVY_BLADE.title": "Heavy Blade",
 
-    "RED_METALLICIZE.description": "Gain [blue]{RedMetallicizePower:diff()}[/blue] [gold]Metallicize[/gold].",
+    "RED_METALLICIZE.description": "At the end of your turn, gain {RedMetallicizePower:diff()} [gold]Block[/gold].",
     "RED_METALLICIZE.title": "Metallicize",
 
     "RED_PUMMEL.description": "Deal {Damage:diff()} damage {Hits:diff()} times.",
@@ -63,16 +54,16 @@
     "RED_CARNAGE.description": "Deal {Damage:diff()} damage.",
 	"RED_CARNAGE.title": "Carnage",
 
-    "RED_BLOOD_FOR_BLOOD.description": "Each time you lose HP during combat, this card costs {energyPrefix:energyIcons(1)} less.\nDeal {Damage:diff()} damage.",
+    "RED_BLOOD_FOR_BLOOD.description": "This card costs {energyPrefix:energyIcons(1)} less for each time you lose HP in combat.\nDeal {Damage:diff()} damage.",
 	"RED_BLOOD_FOR_BLOOD.title": "Blood for Blood",
 
     "RED_SEVER_SOUL.description": "[gold]Exhaust[/gold] all non-Attack cards in your [gold]hand[/gold]. Deal {Damage:diff()} damage.",
     "RED_SEVER_SOUL.title": "Sever Soul",
 
-    "RED_IMMOLATE.description": "Deal {Damage:diff()} damage to ALL enemies.\nAdd a [gold]Burn[/gold] into your [gold]discard pile[/gold].",
+    "RED_IMMOLATE.description": "Deal {Damage:diff()} damage to ALL enemies.\nAdd a [gold]Burn[/gold] to your [gold]discard pile[/gold].",
     "RED_IMMOLATE.title":"Immolate",
 
-    "RED_REAPER.description": "Deal {Damage:diff()} damage to ALL enemies.\nHeal HP equal to the unblocked damage dealt.",
+    "RED_REAPER.description": "Deal {Damage:diff()} damage to ALL enemies.\nHeal HP equal to unblocked damage dealt.",
     "RED_REAPER.title":"Reaper",
 
     "RED_DISARM.description": "Enemy loses {EnemyStrengthLoss:diff()} [gold]Strength[/gold].",
@@ -82,7 +73,7 @@
     "RED_INTIMIDATE.title":"Intimidate",
 
     "RED_EXHUME.selectionScreenPrompt": "Choose a card to add to your hand.",
-    "RED_EXHUME.description": "Choose a card from your [gold]exhaust pile[/gold] and add it to your [gold]hand[/gold].",
+    "RED_EXHUME.description": "Choose an [gold]Exhausted[/gold] card and add it to your [gold]hand[/gold].",
 	"RED_EXHUME.title": "Exhume",
 
     "RED_SEEING_RED.description": "Gain {Energy:energyIcons()}.",
@@ -100,7 +91,7 @@
     "RED_FLEX.description": "Gain {StrengthPower:diff()} [gold]Strength[/gold] this turn.",
     "RED_FLEX.title": "Flex",
 
-    "RED_SPOT_WEAKNESS.description": "If an enemy intends to attack,\nyou gain {StrengthPower:diff()} [gold]Strength[/gold].",
+    "RED_SPOT_WEAKNESS.description": "If the enemy intends to attack,\nyou gain {StrengthPower:diff()} [gold]Strength[/gold].",
     "RED_SPOT_WEAKNESS.title": "Spot Weakness",
 
     "RED_LIMIT_BREAK.description": "Double your [gold]Strength[/gold].",
@@ -109,14 +100,89 @@
     "RED_EVOLVE.description": "Whenever you draw a [gold]Status[/gold] card, draw {RedEvolvePower:diff()} cards.",
 	"RED_EVOLVE.title": "Evolve",
 
-    "RED_BERSERK.description": "Gain {VulnerablePower:diff()} [gold]Vulnerable[/gold].\nAt the start of each turn, gain {Energy:energyIcons()}",
+    "RED_BERSERK.description": "Gain {VulnerablePower:diff()} [gold]Vulnerable[/gold].\nAt the start of your turn gain {Energy:energyIcons()}",
 	"RED_BERSERK.title": "Berserk",
         
     "RED_BRUTALITY.description": "At the start of your turn, lose 1 HP and draw {RedBrutalityPower:diff()} cards.",
 	"RED_BRUTALITY.title": "Brutality",
 
-    "RED_DUAL_WIELD.description": "Choose an Attack or Power card. Add {IfUpgraded:show:{Cards} copies|a copy} of that card into your [gold]hand[/gold].",
-    "RED_DUAL_WIELD.selectionScreenPrompt": "Choose a card to copy.",
+    "GREEN_WRAITH_FORM.description": "Gain {IntangiblePower:diff()} [gold]Intangible[/gold].\nAt the start of each turn, lose {WraithFormPower:diff()} [gold]Dexterity[/gold].",
+    "GREEN_WRAITH_FORM.title": "Wraith Form",
+
+    "GREEN_PHANTASMAL_KILLER.description": "Next turn, your Attacks deal double damage.",
+    "GREEN_PHANTASMAL_KILLER.title": "Phantasmal Killer",
+    
+    "GREEN_CALCULATED_GAMBLE.description": "Discard your entire [gold]hand[/gold],\nthen draw that many cards.",
+    "GREEN_CALCULATED_GAMBLE.title": "Calculated Gamble",
+
+    "GREEN_DOPPELGANGER.description": "Next turn, draw {Cards:diff()} cards and gain {Energy:energyIcons()}.",
+    "GREEN_DOPPELGANGER.title": "Doppelganger",
+
+    "GREEN_FLYING_KNEE.description": "Deal {Damage:diff()} damage. Gain {Energy:energyIcons()} next turn.",
+    "GREEN_FLYING_KNEE.title": "Flying Knee",
+
+    "GREEN_GLASS_KNIFE.description": "Deal {Damage:diff()} damage twice. Each time this card is played, permanently reduce its base damage by 2 this combat.",
+    "GREEN_GLASS_KNIFE.title": "Glass Knife",
+
+    "GREEN_SNEAKY_STRIKE.description": "Deal {Damage:diff()} damage.\nIf you have discarded a card this turn, gain {Energy:energyIcons()}.",
+    "GREEN_SNEAKY_STRIKE.title": "Sneaky Strike",
+
+    "GREEN_EVISCERATE.description": "Costs {energyPrefix:energyIcons(1)} less for each card discarded this turn.\nDeal {Damage:diff()} damage 3 times.",
+    "GREEN_EVISCERATE.title": "Eviscerate",
+
+    "GREEN_ALL_OUT_ATTACK.description": "Deal {Damage:diff()} damage to ALL enemies.\nDiscard a random [gold]card[/gold].",
+    "GREEN_ALL_OUT_ATTACK.title": "All-Out Attack",
+
+    "GREEN_ENDLESS_AGONY.description": "Deal {Damage:diff()} damage.\nWhenever you draw this card, add a copy of it into your [gold]hand[/gold].",
+    "GREEN_ENDLESS_AGONY.title": "Endless Agony",
+
+    "GREEN_CHOKE.description": "Deal {Damage:diff()} damage.\nWhenever you play a card this turn, the enemy loses {GreenChokePower:diff()} HP.",
+    "GREEN_CHOKE.title": "Choke",
+
+    "GREEN_A_THOUSAND_CUTS.description": "Whenever you play a card, deal {GreenAThousandCutsPower:diff()} damage to ALL enemies.",
+    "GREEN_A_THOUSAND_CUTS.title": "A Thousand Cuts",
+
+    "GREEN_BANE.description": "Deal {Damage:diff()} damage.\nIf the enemy is [gold]Poisoned[/gold], deal {Damage:diff()} damage again.",
+    "GREEN_BANE.title": "Bane",
+
+    "GREEN_DIE_DIE_DIE.description": "Deal {Damage:diff()} damage to ALL enemies.",
+    "GREEN_DIE_DIE_DIE.title": "Die Die Die",
+
+    "GREEN_RIDDLE_WITH_HOLES.description": "Deal {Damage:diff()} damage {Repeat:diff()} times.",
+    "GREEN_RIDDLE_WITH_HOLES.title": "Riddle With Holes",
+
+    "GREEN_TERROR.description": "Apply {Power:diff()} [gold]Vulnerable[/gold].",
+    "GREEN_TERROR.title": "Terror",
+
+    "GREEN_VENOMOLOGY.description": "Obtain a random potion.",
+    "GREEN_VENOMOLOGY.title": "Venomology",
+
+    "GREEN_QUICK_SLASH.description": "Deal {Damage:diff()} damage.\nDraw {Cards:diff()} cards.",
+    "GREEN_QUICK_SLASH.title": "Quick Slash",
+
+    "GREEN_HEEL_HOOK.description": "Deal {Damage:diff()} damage.\nIf the enemy is [gold]Weak[/gold], gain {Energy:energyIcons()} and draw 1 card.",
+    "GREEN_HEEL_HOOK.title": "Heel Hook",
+
+    "GREEN_MASTERFUL_STAB.description": "Deal {Damage:diff()} damage.\nCosts {energyPrefix:energyIcons(1)} more whenever you take damage.",
+    "GREEN_MASTERFUL_STAB.title": "Masterful Stab",
+
+    "GREEN_UNLOAD.description": "Deal {Damage:diff()} damage.\nDiscard all non-Attack cards.",
+    "GREEN_UNLOAD.title": "Unload",
+
+    "GREEN_CONCENTRATE.description": "Discard {Cards:diff()} cards.\nGain {Energy:energyIcons()}.",
+    "GREEN_CONCENTRATE.title": "Concentrate",
+
+    "GREEN_CRIPPLING_POISON.description": "Apply {PoisonPower:diff()} [gold]Poison[/gold] and 2 [gold]Weak[/gold] to ALL enemies.",
+    "GREEN_CRIPPLING_POISON.title": "Crippling Poison",
+    
+    "GREEN_CATALYST.description": "Double an enemy's [gold]Poison[/gold]. {IfUpgraded:show:Triple it instead|}",
+    "GREEN_CATALYST.title": "Catalyst",
+
+    "GREEN_CORPSE_EXPLOSION.description": "Apply {PoisonPower:diff()} [gold]Poison[/gold].\nWhen that enemy dies, deal damage equal to its max HP to ALL enemies.",
+    "GREEN_CORPSE_EXPLOSION.title": "Corpse Explosion",
+
+    "RED_DUAL_WIELD.description": "Choose an Attack or Power card. Add {IfUpgraded:show:{Cards} copies|a copy} of it into your [gold]hand[/gold].",
+    "RED_DUAL_WIELD.selectionScreenPrompt": "Choose a card to duplicate.",
     "RED_DUAL_WIELD.title": "Dual Wield",
 
     "RED_ENTRENCH.description": "Double your current [gold]Block[/gold].",

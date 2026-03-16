@@ -23,7 +23,7 @@ public sealed class RedCarnage : CardModel
             new DamageVar(20m, ValueProp.Move)
         };
 
-    // 真正生效虚无要通过卡牌关键词，而不是仅添加 HoverTip。
+    // 虚无要通过卡牌关键词，而不是仅添加 HoverTip。
     public override IEnumerable<CardKeyword> CanonicalKeywords =>
         new List<CardKeyword>
         {

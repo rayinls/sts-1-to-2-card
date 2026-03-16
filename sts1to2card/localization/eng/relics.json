@@ -1,0 +1,11 @@
+{
+    "SHARED_DEAD_BRANCH.description": "Whenever you [gold]expend[/gold] a card, add a random card to your [gold]hand[/gold].",
+    "SHARED_DEAD_BRANCH.flavor": "A branch left behind from a long-forgotten era.",
+    "SHARED_DEAD_BRANCH.title": "Dead Branch",
+    "SHARED_CLOCKWORK_SOUVENIR.description": "At the start of each combat, gain [blue]{ArtifactPower}[/blue] stacks of [gold]Artifact[/gold].",
+    "SHARED_CLOCKWORK_SOUVENIR.flavor": "\"See all the gears inside? Isn’t it intricate?\"",
+    "SHARED_CLOCKWORK_SOUVENIR.title": "Clockwork Souvenir",
+    "SHARED_ORANGE_PELLETS.description": "Whenever you play a Skill, Attack, and Power card each in the same turn, remove all negative effects from yourself.",
+    "SHARED_ORANGE_PELLETS.flavor": "\"A medicine made from fungi from all over the tower—cures everything!\"",
+    "SHARED_ORANGE_PELLETS.title": "Orange Pellets"
+}

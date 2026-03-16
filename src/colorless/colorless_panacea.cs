@@ -13,11 +13,16 @@ namespace sts1to2card.src.colorless
 {
     public sealed class ColorlessPanacea : CardModel
     {
-        public ColorlessPanacea() 
-            : base(0, CardType.Skill, CardRarity.Uncommon, TargetType.Self, true) // true = Exhaust
+        public ColorlessPanacea()
+            : base(0, CardType.Skill, CardRarity.Uncommon, TargetType.Self, true)
         {
         }
 
+        public override IEnumerable<CardKeyword> CanonicalKeywords =>
+            new List<CardKeyword>
+        {
+            CardKeyword.Ethereal
+        };
         protected override IEnumerable<DynamicVar> CanonicalVars => new List<DynamicVar>
         {
             new PowerVar<ArtifactPower>(1m)

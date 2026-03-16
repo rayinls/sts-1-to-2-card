@@ -1,120 +1,119 @@
-using HarmonyLib;
+using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using MegaCrit.Sts2.Core.Modding;
+using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.CardPools;
 using MegaCrit.Sts2.Core.Models.RelicPools;
-using System.Reflection;
-using MegaCrit.Sts2.Core.Models;
+using sts1to2card.src.GreenSilent;
+using sts1to2card.src.GreenSilentAwakened;
+using sts1to2card.src.RedIronclad;
+using sts1to2card.src.RedIroncladAwakened;
 
-namespace sts1to2card.Scripts
+namespace sts1to2card.Scripts;
+
+// 卡牌排除配置类
+public static class CardExclusionConfig
 {
-    [ModInitializer("Init")]
-    public class Entry
+    // 需要从觉醒牌池排除的红色卡牌列表
+    public static HashSet<string> RedExcludedFromAwakened = new HashSet<string>
     {
-        public static void Init()
+        "RedBludgeon",      // 排除刚才的重击卡
+        // 示例: "RedClothesline", "RedThunderclap" 等
+    };
+    
+    // 需要从觉醒牌池排除的绿色卡牌列表（如果需要）
+    public static HashSet<string> GreenExcludedFromAwakened = new HashSet<string>
+    {
+		"GreenCalculatedGamble",
+        // "GreenSomeCard",  // 可以添加要排除的绿色卡牌
+    };
+}
+
+[ModInitializer("Init")]
+public class Entry
+{
+    public static void Init()
+    {
+        RegisterCards();
+        RegisterRelics();
+    }
+
+    private static void RegisterCards()
+    {
+        Assembly executingAssembly = Assembly.GetExecutingAssembly();
+        IEnumerable<Type> enumerable = from t in executingAssembly.GetTypes()
+            where !t.IsAbstract && typeof(CardModel).IsAssignableFrom(t)
+            select t;
+        
+        foreach (Type item in enumerable)
         {
-            // 自动注册卡牌
-            RegisterCards();
-
-            // 自动注册遗物
-            RegisterRelics();
-        }
-
-        private static void RegisterCards()
-        {
-            var assembly = Assembly.GetExecutingAssembly();
-
-            var cardTypes = assembly.GetTypes()
-                .Where(t =>
-                    !t.IsAbstract &&
-                    typeof(CardModel).IsAssignableFrom(t)
-                );
-
-            foreach (var type in cardTypes)
+            string name = item.Name;
+            if (name.StartsWith("Colorless"))
             {
-                var name = type.Name;
-
-                                 // 无色卡
-                if (name.StartsWith("Colorless"))
+                ModHelper.AddModelToPool(typeof(ColorlessCardPool), item);
+            }
+            else if (name.StartsWith("Red"))
+            {
+                // 添加到基础牌池（总是添加）
+                ModHelper.AddModelToPool(typeof(RedIroncladCardPool), item);
+                
+                // 检查是否在红色觉醒牌池排除列表中
+                if (!CardExclusionConfig.RedExcludedFromAwakened.Contains(name))
                 {
-                    ModHelper.AddModelToPool(typeof(ColorlessCardPool), type);
+                    // 只有不在排除列表中的才添加到觉醒牌池
+                    ModHelper.AddModelToPool(typeof(RedIroncladAwakenedCardPool), item);
                 }
-
-                // 红卡
-                else if (name.StartsWith("Red"))
+            }
+            else if (name.StartsWith("Green"))
+            {
+                // 添加到基础牌池（总是添加）
+                ModHelper.AddModelToPool(typeof(GreenSilentCardPool), item);
+                
+                // 检查是否在绿色觉醒牌池排除列表中
+                if (!CardExclusionConfig.GreenExcludedFromAwakened.Contains(name))
                 {
-                    ModHelper.AddModelToPool(typeof(IroncladCardPool), type);
-                }
-
-                // 绿卡
-                else if (name.StartsWith("Green"))
-                {
-                    ModHelper.AddModelToPool(typeof(SilentCardPool), type);
+                    // 只有不在排除列表中的才添加到觉醒牌池
+                    ModHelper.AddModelToPool(typeof(GreenSilentAwakenedCardPool), item);
                 }
             }
         }
+    }
 
-        private static void RegisterRelics()
+    private static void RegisterRelics()
+    {
+        Assembly executingAssembly = Assembly.GetExecutingAssembly();
+        IEnumerable<Type> enumerable = from t in executingAssembly.GetTypes()
+            where !t.IsAbstract && typeof(RelicModel).IsAssignableFrom(t)
+            select t;
+        
+        foreach (Type item in enumerable)
         {
-            var assembly = Assembly.GetExecutingAssembly();
-
-            var relicTypes = assembly.GetTypes()
-                .Where(t =>
-                    !t.IsAbstract &&
-                    typeof(RelicModel).IsAssignableFrom(t)
-                );
-
-            foreach (var type in relicTypes)
+            string text = item.Namespace ?? "";
+            if (text.Contains(".relics.shared"))
             {
-                var ns = type.Namespace ?? "";
-
-                // relics.shared → 通用遗物
-                if (ns.Contains(".relics.shared"))
-                {
-                    ModHelper.AddModelToPool(typeof(SharedRelicPool), type);
-                }
-
-                // relics.red → 战士遗物
-                else if (ns.Contains(".relics.red"))
-                {
-                    ModHelper.AddModelToPool(typeof(IroncladRelicPool), type);
-                }
-
-                // relics.green → 猎人遗物
-                else if (ns.Contains(".relics.green"))
-                {
-                    ModHelper.AddModelToPool(typeof(SilentRelicPool), type);
-                }
-
-                else if (ns.Contains(".relics.blue"))
-                {
-                    ModHelper.AddModelToPool(typeof(DefectRelicPool), type);
-                }
-                
-                else if (ns.Contains(".relics.pink"))
-                {
-                    ModHelper.AddModelToPool(typeof(NecrobinderRelicPool), type);
-                }
-
-                else if (ns.Contains(".relics.orange"))
-                {
-                    ModHelper.AddModelToPool(typeof(RegentRelicPool), type);
-                }
-
-                // ===== 预留扩展接口 =====
-                // 未来新增角色时只需要在这里补充
-                //
-                // else if (ns.Contains(".relics.defect"))
-                // {
-                //     ModHelper.AddModelToPool(typeof(DefectRelicPool), type);
-                // }
-                //
-                // else if (ns.Contains(".relics.necrobinder"))
-                // {
-                //     ModHelper.AddModelToPool(typeof(NecrobinderRelicPool), type);
-                // }
-                //
-                // ========================
+                ModHelper.AddModelToPool(typeof(SharedRelicPool), item);
+            }
+            else if (text.Contains(".relics.red"))
+            {
+                ModHelper.AddModelToPool(typeof(IroncladRelicPool), item);
+            }
+            else if (text.Contains(".relics.green"))
+            {
+                ModHelper.AddModelToPool(typeof(SilentRelicPool), item);
+            }
+            else if (text.Contains(".relics.blue"))
+            {
+                ModHelper.AddModelToPool(typeof(DefectRelicPool), item);
+            }
+            else if (text.Contains(".relics.pink"))
+            {
+                ModHelper.AddModelToPool(typeof(NecrobinderRelicPool), item);
+            }
+            else if (text.Contains(".relics.orange"))
+            {
+                ModHelper.AddModelToPool(typeof(RegentRelicPool), item);
             }
         }
     }

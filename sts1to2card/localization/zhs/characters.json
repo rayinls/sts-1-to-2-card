@@ -1,0 +1,129 @@
+{
+  // 混沌香气事件中的内心独白
+  "STS1TO2CARD-RED_IRONCLAD.aromaPrinciple": "[sine][blue]……等待……[/blue][/sine]",
+  // 多人模式：存活时回合结束对白
+  "STS1TO2CARD-RED_IRONCLAD.banter.alive.endTurnPing": "……",
+  // 多人模式：死亡后回合结束对白
+  "STS1TO2CARD-RED_IRONCLAD.banter.dead.endTurnPing": "……",
+  // 自定义模式文本
+  "STS1TO2CARD-RED_IRONCLAD.cardsModifierDescription": "铁甲战士的卡牌现在会出现在奖励和商店中。",
+  // 卡池名字
+  "STS1TO2CARD-RED_IRONCLAD.cardsModifierTitle": "铁甲战士",
+  // 角色选择界面描述
+  "STS1TO2CARD-RED_IRONCLAD.description": "[red]一人之军[/red]:初代卡池。\n铁甲军团残留下的士兵。\n他出卖自己的灵魂，获得了恶魔的力量。",
+  // 死亡时事件对话
+  "STS1TO2CARD-RED_IRONCLAD.eventDeathPrevention": "我还得继续等下去……",
+  // 沉没宝库事件中对金币的独白
+  "STS1TO2CARD-RED_IRONCLAD.goldMonologue": "[sine]这些金币……也许能派上用场……[/sine]",
+  // 物主形容词，用于动态文本
+  "STS1TO2CARD-RED_IRONCLAD.possessiveAdjective": "他的",
+  // 宾语代词
+  "STS1TO2CARD-RED_IRONCLAD.pronounObject": "他",
+  // 所有格代词
+  "STS1TO2CARD-RED_IRONCLAD.pronounPossessive": "他的",
+  // 主语代词
+  "STS1TO2CARD-RED_IRONCLAD.pronounSubject": "他",
+  // 角色名（标题用）
+  "STS1TO2CARD-RED_IRONCLAD.title": "铁甲战士",
+  // 角色名（作宾语用）
+  "STS1TO2CARD-RED_IRONCLAD.titleObject": "铁甲战士",
+  // 解锁条件文案，{Prerequisite} 会被替换
+  "STS1TO2CARD-RED_IRONCLAD.unlockText": "用[pink]{Prerequisite}[/pink]进行一局游戏来解锁这个角色。",
+
+
+  // 混沌香气事件中的内心独白
+  "STS1TO2CARD-RED_IRONCLAD_AWAKENED.aromaPrinciple": "[sine][blue]……等待……[/blue][/sine]",
+  // 多人模式：存活时回合结束对白
+  "STS1TO2CARD-RED_IRONCLAD_AWAKENED.banter.alive.endTurnPing": "……",
+  // 多人模式：死亡后回合结束对白
+  "STS1TO2CARD-RED_IRONCLAD_AWAKENED.banter.dead.endTurnPing": "……",
+  // 自定义模式文本
+  "STS1TO2CARD-RED_IRONCLAD_AWAKENED.cardsModifierDescription": "铁甲战士的卡牌现在会出现在奖励和商店中。",
+  // 卡池名字
+  "STS1TO2CARD-RED_IRONCLAD_AWAKENED.cardsModifierTitle": "铁甲战士",
+  // 角色选择界面描述
+  "STS1TO2CARD-RED_IRONCLAD_AWAKENED.description": "[red]我已觉醒[/red]:一二代卡池。\n铁甲军团残留下的士兵。\n他出卖自己的灵魂，获得了恶魔的力量，用刀剑与烈焰击溃敌人。",
+  // 死亡时事件对话
+  "STS1TO2CARD-RED_IRONCLAD_AWAKENED.eventDeathPrevention": "我还得继续等下去……",
+  // 沉没宝库事件中对金币的独白
+  "STS1TO2CARD-RED_IRONCLAD_AWAKENED.goldMonologue": "[sine]这些金币……也许能派上用场……[/sine]",
+  // 物主形容词，用于动态文本
+  "STS1TO2CARD-RED_IRONCLAD_AWAKENED.possessiveAdjective": "他的",
+  // 宾语代词
+  "STS1TO2CARD-RED_IRONCLAD_AWAKENED.pronounObject": "他",
+  // 所有格代词
+  "STS1TO2CARD-RED_IRONCLAD_AWAKENED.pronounPossessive": "他的",
+  // 主语代词
+  "STS1TO2CARD-RED_IRONCLAD_AWAKENED.pronounSubject": "他",
+  // 角色名（标题用）
+  "STS1TO2CARD-RED_IRONCLAD_AWAKENED.title": "铁甲战士",
+  // 角色名（作宾语用）
+  "STS1TO2CARD-RED_IRONCLAD_AWAKENED.titleObject": "铁甲战士",
+  // 解锁条件文案，{Prerequisite} 会被替换
+  "STS1TO2CARD-RED_IRONCLAD_AWAKENED.unlockText": "用[pink]{Prerequisite}[/pink]进行一局游戏来解锁这个角色。",
+
+
+  // 混沌香气事件中的内心独白
+  "STS1TO2CARD-GREEN_SILENT.aromaPrinciple": "[sine][blue]……等待……[/blue][/sine]",
+  // 多人模式：存活时回合结束对白
+  "STS1TO2CARD-GREEN_SILENT.banter.alive.endTurnPing": "……",
+  // 多人模式：死亡后回合结束对白
+  "STS1TO2CARD-GREEN_SILENT.banter.dead.endTurnPing": "……",
+  // 自定义模式文本
+  "STS1TO2CARD-GREEN_SILENT.cardsModifierDescription": "静默猎手的卡牌现在会出现在奖励和商店中。",
+  // 卡池名字
+  "STS1TO2CARD-GREEN_SILENT.cardsModifierTitle": "静默猎手",
+  // 角色选择界面描述
+  "STS1TO2CARD-GREEN_SILENT.description": "[green]迷雾幽灵[/green]:一代卡池。\n来自雾霾之地的致命女猎手。\n使用匕首和下毒来消灭敌人。",
+  // 死亡时事件对话
+  "STS1TO2CARD-GREEN_SILENT.eventDeathPrevention": "我还得继续等下去……",
+  // 沉没宝库事件中对金币的独白
+  "STS1TO2CARD-GREEN_SILENT.goldMonologue": "[sine]这些金币……也许能派上用场……[/sine]",
+  // 物主形容词，用于动态文本
+  "STS1TO2CARD-GREEN_SILENT.possessiveAdjective": "她的",
+  // 宾语代词
+  "STS1TO2CARD-GREEN_SILENT.pronounObject": "她",
+  // 所有格代词
+  "STS1TO2CARD-GREEN_SILENT.pronounPossessive": "她的",
+  // 主语代词
+  "STS1TO2CARD-GREEN_SILENT.pronounSubject": "她",
+  // 角色名（标题用）
+  "STS1TO2CARD-GREEN_SILENT.title": "静默猎手",
+  // 角色名（作宾语用）
+  "STS1TO2CARD-GREEN_SILENT.titleObject": "静默猎手",
+  // 解锁条件文案，{Prerequisite} 会被替换
+  "STS1TO2CARD-GREEN_SILENT.unlockText": "用[pink]{Prerequisite}[/pink]进行一局游戏来解锁这个角色。",
+
+
+
+    // 混沌香气事件中的内心独白
+  "STS1TO2CARD-GREEN_SILENT_AWAKENED.aromaPrinciple": "[sine][blue]……等待……[/blue][/sine]",
+  // 多人模式：存活时回合结束对白
+  "STS1TO2CARD-GREEN_SILENT_AWAKENED.banter.alive.endTurnPing": "……",
+  // 多人模式：死亡后回合结束对白
+  "STS1TO2CARD-GREEN_SILENT_AWAKENED.banter.dead.endTurnPing": "……",
+  // 自定义模式文本
+  "STS1TO2CARD-GREEN_SILENT_AWAKENED.cardsModifierDescription": "静默猎手的卡牌现在会出现在奖励和商店中。",
+  // 卡池名字
+  "STS1TO2CARD-GREEN_SILENT_AWAKENED.cardsModifierTitle": "静默猎手",
+  // 角色选择界面描述
+  "STS1TO2CARD-GREEN_SILENT_AWAKENED.description": "[green]我已觉醒[/green]:一二代卡池。\n来自尖塔之外雾霾之地的致命女猎手。\n使用匕首和下毒来消灭敌人。",
+  // 死亡时事件对话
+  "STS1TO2CARD-GREEN_SILENT_AWAKENED.eventDeathPrevention": "我还得继续等下去……",
+  // 沉没宝库事件中对金币的独白
+  "STS1TO2CARD-GREEN_SILENT_AWAKENED.goldMonologue": "[sine]这些金币……也许能派上用场……[/sine]",
+  // 物主形容词，用于动态文本
+  "STS1TO2CARD-GREEN_SILENT_AWAKENED.possessiveAdjective": "她的",
+  // 宾语代词
+  "STS1TO2CARD-GREEN_SILENT_AWAKENED.pronounObject": "她",
+  // 所有格代词
+  "STS1TO2CARD-GREEN_SILENT_AWAKENED.pronounPossessive": "她的",
+  // 主语代词
+  "STS1TO2CARD-GREEN_SILENT_AWAKENED.pronounSubject": "她",
+  // 角色名（标题用）
+  "STS1TO2CARD-GREEN_SILENT_AWAKENED.title": "静默猎手",
+  // 角色名（作宾语用）
+  "STS1TO2CARD-GREEN_SILENT_AWAKENED.titleObject": "静默猎手",
+  // 解锁条件文案，{Prerequisite} 会被替换
+  "STS1TO2CARD-GREEN_SILENT_AWAKENED.unlockText": "用[pink]{Prerequisite}[/pink]进行一局游戏来解锁这个角色。"
+}

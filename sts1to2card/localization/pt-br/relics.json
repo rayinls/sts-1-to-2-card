@@ -1,0 +1,17 @@
+{
+    "SHARED_DEAD_BRANCH.description": "Whenever you [gold]expend[/gold] a card, add a random card to your [gold]hand[/gold].",
+    "SHARED_DEAD_BRANCH.flavor": "A branch from a tree left behind by a long-forgotten era.",
+    "SHARED_DEAD_BRANCH.title": "Dead Branch",
+    
+    "SHARED_DEAD_BRANCH.description_pt": "Sempre que você [gold]gastar[/gold] uma carta, adicione uma carta aleatória à sua [gold]mão[/gold].",
+    "SHARED_DEAD_BRANCH.flavor_pt": "Um galho de árvore deixado por uma era há muito esquecida.",
+    "SHARED_DEAD_BRANCH.title_pt": "Galho Seco",
+
+    "SHARED_CLOCKWORK_SOUVENIR.description": "At the start of each combat, gain [blue]{ArtifactPower}[/blue] [gold]Artifact[/gold].",
+    "SHARED_CLOCKWORK_SOUVENIR.flavor": "\"Look at all these gears inside—it’s quite intricate.\"",
+    "SHARED_CLOCKWORK_SOUVENIR.title": "Clockwork Souvenir",
+
+    "SHARED_CLOCKWORK_SOUVENIR.description_pt": "No início de cada combate, ganhe [blue]{ArtifactPower}[/blue] [gold]Artefato[/gold].",
+    "SHARED_CLOCKWORK_SOUVENIR.flavor_pt": "\"Olhe para todos esses engrenagens dentro—é bem intrincado.\"",
+    "SHARED_CLOCKWORK_SOUVENIR.title_pt": "Souvenir Mecânico"
+}

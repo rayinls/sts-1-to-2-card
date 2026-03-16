@@ -27,11 +27,20 @@
       <Private>false</Private>
     </Reference>
 
+    <!-- 本地引用，注意路径是否正确 -->
+    <Reference Include="BaseLib">
+      <HintPath>$(Sts2Dir)/mods/BaseLib/BaseLib.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- NuGet获取，注意版本是否一致，不一致手动更改Version -->
+    <!-- <PackageReference Include="Alchyr.Sts2.BaseLib" Version="*" /> -->
   </ItemGroup>
+  
   <!-- 自动复制dll -->
   <Target Name="Copy Mod" AfterTargets="PostBuildEvent">
     <Message Text="Copying mod to Slay the Spire 2 mods folder..." Importance="high" />
     <MakeDir Directories="$(Sts2Dir)\mods\" />
     <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(Sts2Dir)\mods\$(MSBuildProjectName)\" />
+    <Copy SourceFiles="$(MSBuildProjectName).json" DestinationFolder="$(Sts2Dir)/mods/$(MSBuildProjectName)/" />
   </Target>
 </Project>

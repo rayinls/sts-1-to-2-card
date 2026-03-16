@@ -38,7 +38,8 @@ namespace sts1to2card.src.red.cards
 		{
 			if (target != null)
 			{
-				int flameStacks = Math.Clamp(1 + base.CurrentUpgradeLevel / 8, 1, 12);
+				//2, 1, 12,每2个等级一团火，最多12
+				int flameStacks = Math.Clamp(1 + base.CurrentUpgradeLevel / 2, 1, 12);
 				NCombatRoom instance = NCombatRoom.Instance;
 				if (instance != null)
 				{

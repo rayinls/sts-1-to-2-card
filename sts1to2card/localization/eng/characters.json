@@ -1,0 +1,129 @@
+{
+  // 混沌香气事件中的内心独白
+  "STS1TO2CARD-RED_IRONCLAD.aromaPrinciple": "[sine][blue]...waiting...[/blue][/sine]",
+  // 多人模式：存活时回合结束对白
+  "STS1TO2CARD-RED_IRONCLAD.banter.alive.endTurnPing": "...",
+  // 多人模式：死亡后回合结束对白
+  "STS1TO2CARD-RED_IRONCLAD.banter.dead.endTurnPing": "...",
+  // 自定义模式文本
+  "STS1TO2CARD-RED_IRONCLAD.cardsModifierDescription": "Ironclad cards will now appear in rewards and shops.",
+  // 卡池名字
+  "STS1TO2CARD-RED_IRONCLAD.cardsModifierTitle": "Ironclad",
+  // 角色选择界面描述
+  "STS1TO2CARD-RED_IRONCLAD.description": "[red]One-Man Army[/red]: First-generation card pool.\nA surviving soldier of the Ironclad legion.\nHe sold his soul to harness demonic powers.",
+  // 死亡时事件对话
+  "STS1TO2CARD-RED_IRONCLAD.eventDeathPrevention": "I must keep waiting...",
+  // 沉没宝库事件中对金币的独白
+  "STS1TO2CARD-RED_IRONCLAD.goldMonologue": "[sine]These coins... might come in handy...[/sine]",
+  // 物主形容词，用于动态文本
+  "STS1TO2CARD-RED_IRONCLAD.possessiveAdjective": "his",
+  // 宾语代词
+  "STS1TO2CARD-RED_IRONCLAD.pronounObject": "him",
+  // 所有格代词
+  "STS1TO2CARD-RED_IRONCLAD.pronounPossessive": "his",
+  // 主语代词
+  "STS1TO2CARD-RED_IRONCLAD.pronounSubject": "he",
+  // 角色名（标题用）
+  "STS1TO2CARD-RED_IRONCLAD.title": "Ironclad",
+  // 角色名（作宾语用）
+  "STS1TO2CARD-RED_IRONCLAD.titleObject": "Ironclad",
+  // 解锁条件文案，{Prerequisite} 会被替换
+  "STS1TO2CARD-RED_IRONCLAD.unlockText": "Play a run with [pink]{Prerequisite}[/pink] to unlock this character.",
+
+
+  // 混沌香气事件中的内心独白
+  "STS1TO2CARD-RED_IRONCLAD_AWAKENED.aromaPrinciple": "[sine][blue]...waiting...[/blue][/sine]",
+  // 多人模式：存活时回合结束对白
+  "STS1TO2CARD-RED_IRONCLAD_AWAKENED.banter.alive.endTurnPing": "...",
+  // 多人模式：死亡后回合结束对白
+  "STS1TO2CARD-RED_IRONCLAD_AWAKENED.banter.dead.endTurnPing": "...",
+  // 自定义模式文本
+  "STS1TO2CARD-RED_IRONCLAD_AWAKENED.cardsModifierDescription": "Ironclad cards will now appear in rewards and shops.",
+  // 卡池名字
+  "STS1TO2CARD-RED_IRONCLAD_AWAKENED.cardsModifierTitle": "Ironclad",
+  // 角色选择界面描述
+  "STS1TO2CARD-RED_IRONCLAD_AWAKENED.description": "[red]I Am Awakened[/red]: First & Second-generation card pools.\nA surviving soldier of the Ironclad legion.\nHe sold his soul to harness demonic powers, crushing enemies with steel and flame.",
+  // 死亡时事件对话
+  "STS1TO2CARD-RED_IRONCLAD_AWAKENED.eventDeathPrevention": "I must keep waiting...",
+  // 沉没宝库事件中对金币的独白
+  "STS1TO2CARD-RED_IRONCLAD_AWAKENED.goldMonologue": "[sine]These coins... might come in handy...[/sine]",
+  // 物主形容词，用于动态文本
+  "STS1TO2CARD-RED_IRONCLAD_AWAKENED.possessiveAdjective": "his",
+  // 宾语代词
+  "STS1TO2CARD-RED_IRONCLAD_AWAKENED.pronounObject": "him",
+  // 所有格代词
+  "STS1TO2CARD-RED_IRONCLAD_AWAKENED.pronounPossessive": "his",
+  // 主语代词
+  "STS1TO2CARD-RED_IRONCLAD_AWAKENED.pronounSubject": "he",
+  // 角色名（标题用）
+  "STS1TO2CARD-RED_IRONCLAD_AWAKENED.title": "Ironclad",
+  // 角色名（作宾语用）
+  "STS1TO2CARD-RED_IRONCLAD_AWAKENED.titleObject": "Ironclad",
+  // 解锁条件文案，{Prerequisite} 会被替换
+  "STS1TO2CARD-RED_IRONCLAD_AWAKENED.unlockText": "Play a run with [pink]{Prerequisite}[/pink] to unlock this character.",
+
+
+  // 混沌香气事件中的内心独白
+  "STS1TO2CARD-GREEN_SILENT.aromaPrinciple": "[sine][blue]...waiting...[/blue][/sine]",
+  // 多人模式：存活时回合结束对白
+  "STS1TO2CARD-GREEN_SILENT.banter.alive.endTurnPing": "...",
+  // 多人模式：死亡后回合结束对白
+  "STS1TO2CARD-GREEN_SILENT.banter.dead.endTurnPing": "...",
+  // 自定义模式文本
+  "STS1TO2CARD-GREEN_SILENT.cardsModifierDescription": "Silent cards will now appear in rewards and shops.",
+  // 卡池名字
+  "STS1TO2CARD-GREEN_SILENT.cardsModifierTitle": "Silent",
+  // 角色选择界面描述
+  "STS1TO2CARD-GREEN_SILENT.description": "[green]Mist Phantom[/green]: First-generation card pool.\nA deadly huntress from the foglands.\nShe eliminates her enemies with daggers and poison.",
+  // 死亡时事件对话
+  "STS1TO2CARD-GREEN_SILENT.eventDeathPrevention": "I must keep waiting...",
+  // 沉没宝库事件中对金币的独白
+  "STS1TO2CARD-GREEN_SILENT.goldMonologue": "[sine]These coins... might come in handy...[/sine]",
+  // 物主形容词，用于动态文本
+  "STS1TO2CARD-GREEN_SILENT.possessiveAdjective": "her",
+  // 宾语代词
+  "STS1TO2CARD-GREEN_SILENT.pronounObject": "her",
+  // 所有格代词
+  "STS1TO2CARD-GREEN_SILENT.pronounPossessive": "hers",
+  // 主语代词
+  "STS1TO2CARD-GREEN_SILENT.pronounSubject": "she",
+  // 角色名（标题用）
+  "STS1TO2CARD-GREEN_SILENT.title": "Silent",
+  // 角色名（作宾语用）
+  "STS1TO2CARD-GREEN_SILENT.titleObject": "Silent",
+  // 解锁条件文案，{Prerequisite} 会被替换
+  "STS1TO2CARD-GREEN_SILENT.unlockText": "Play a run with [pink]{Prerequisite}[/pink] to unlock this character.",
+
+
+
+    // 混沌香气事件中的内心独白
+  "STS1TO2CARD-GREEN_SILENT_AWAKENED.aromaPrinciple": "[sine][blue]...waiting...[/blue][/sine]",
+  // 多人模式：存活时回合结束对白
+  "STS1TO2CARD-GREEN_SILENT_AWAKENED.banter.alive.endTurnPing": "...",
+  // 多人模式：死亡后回合结束对白
+  "STS1TO2CARD-GREEN_SILENT_AWAKENED.banter.dead.endTurnPing": "...",
+  // 自定义模式文本
+  "STS1TO2CARD-GREEN_SILENT_AWAKENED.cardsModifierDescription": "Silent cards will now appear in rewards and shops.",
+  // 卡池名字
+  "STS1TO2CARD-GREEN_SILENT_AWAKENED.cardsModifierTitle": "Silent",
+  // 角色选择界面描述
+  "STS1TO2CARD-GREEN_SILENT_AWAKENED.description": "[green]I Am Awakened[/green]: First & Second-generation card pools.\nA deadly huntress from the foglands beyond the Spire.\nShe eliminates her enemies with daggers and poison.",
+  // 死亡时事件对话
+  "STS1TO2CARD-GREEN_SILENT_AWAKENED.eventDeathPrevention": "I must keep waiting...",
+  // 沉没宝库事件中对金币的独白
+  "STS1TO2CARD-GREEN_SILENT_AWAKENED.goldMonologue": "[sine]These coins... might come in handy...[/sine]",
+  // 物主形容词，用于动态文本
+  "STS1TO2CARD-GREEN_SILENT_AWAKENED.possessiveAdjective": "her",
+  // 宾语代词
+  "STS1TO2CARD-GREEN_SILENT_AWAKENED.pronounObject": "her",
+  // 所有格代词
+  "STS1TO2CARD-GREEN_SILENT_AWAKENED.pronounPossessive": "hers",
+  // 主语代词
+  "STS1TO2CARD-GREEN_SILENT_AWAKENED.pronounSubject": "she",
+  // 角色名（标题用）
+  "STS1TO2CARD-GREEN_SILENT_AWAKENED.title": "Silent",
+  // 角色名（作宾语用）
+  "STS1TO2CARD-GREEN_SILENT_AWAKENED.titleObject": "Silent",
+  // 解锁条件文案，{Prerequisite} 会被替换
+  "STS1TO2CARD-GREEN_SILENT_AWAKENED.unlockText": "Play a run with [pink]{Prerequisite}[/pink] to unlock this character."
+}

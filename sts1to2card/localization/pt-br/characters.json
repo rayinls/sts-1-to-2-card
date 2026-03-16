@@ -1,0 +1,129 @@
+{
+  // 混沌香气事件中的内心独白
+  "STS1TO2CARD-RED_IRONCLAD.aromaPrinciple": "[sine][blue]……esperar……[/blue][/sine]",
+  // 多人模式：存活时回合结束对白
+  "STS1TO2CARD-RED_IRONCLAD.banter.alive.endTurnPing": "……",
+  // 多人模式：死亡后回合结束对白
+  "STS1TO2CARD-RED_IRONCLAD.banter.dead.endTurnPing": "……",
+  // 自定义模式文本
+  "STS1TO2CARD-RED_IRONCLAD.cardsModifierDescription": "As cartas do Ironclad agora aparecerão nas recompensas e nas lojas.",
+  // 卡池名字
+  "STS1TO2CARD-RED_IRONCLAD.cardsModifierTitle": "Ironclad",
+  // 角色选择界面描述
+  "STS1TO2CARD-RED_IRONCLAD.description": "[red]Um exército de um homem só[/red]: Baralho da 1ª geração.\nUm soldado remanescente da Legião de Ferro.\nEle vendeu sua alma e obteve o poder dos demônios.",
+  // 死亡时事件对话
+  "STS1TO2CARD-RED_IRONCLAD.eventDeathPrevention": "Ainda preciso continuar esperando……",
+  // 沉没宝库事件中对金币的独白
+  "STS1TO2CARD-RED_IRONCLAD.goldMonologue": "[sine]Essas moedas…… talvez possam ser úteis……[/sine]",
+  // 物主形容词，用于动态文本
+  "STS1TO2CARD-RED_IRONCLAD.possessiveAdjective": "seu",
+  // 宾语代词
+  "STS1TO2CARD-RED_IRONCLAD.pronounObject": "ele",
+  // 所有格代词
+  "STS1TO2CARD-RED_IRONCLAD.pronounPossessive": "seu",
+  // 主语代词
+  "STS1TO2CARD-RED_IRONCLAD.pronounSubject": "ele",
+  // 角色名（标题用）
+  "STS1TO2CARD-RED_IRONCLAD.title": "Ironclad",
+  // 角色名（作宾语用）
+  "STS1TO2CARD-RED_IRONCLAD.titleObject": "Ironclad",
+  // 解锁条件文案，{Prerequisite} 会被替换
+  "STS1TO2CARD-RED_IRONCLAD.unlockText": "Jogue uma partida com [pink]{Prerequisite}[/pink] para desbloquear este personagem.",
+
+
+  // 混沌香气事件中的内心独白
+  "STS1TO2CARD-RED_IRONCLAD_AWAKENED.aromaPrinciple": "[sine][blue]……esperar……[/blue][/sine]",
+  // 多人模式：存活时回合结束对白
+  "STS1TO2CARD-RED_IRONCLAD_AWAKENED.banter.alive.endTurnPing": "……",
+  // 多人模式：死亡后回合结束对白
+  "STS1TO2CARD-RED_IRONCLAD_AWAKENED.banter.dead.endTurnPing": "……",
+  // 自定义模式文本
+  "STS1TO2CARD-RED_IRONCLAD_AWAKENED.cardsModifierDescription": "As cartas do Ironclad agora aparecerão nas recompensas e nas lojas.",
+  // 卡池名字
+  "STS1TO2CARD-RED_IRONCLAD_AWAKENED.cardsModifierTitle": "Ironclad",
+  // 角色选择界面描述
+  "STS1TO2CARD-RED_IRONCLAD_AWAKENED.description": "[red]Eu despertei[/red]: Baralhos da 1ª e 2ª geração.\nUm soldado remanescente da Legião de Ferro.\nEle vendeu sua alma e obteve o poder dos demônios, esmagando inimigos com lâminas e chamas.",
+  // 死亡时事件对话
+  "STS1TO2CARD-RED_IRONCLAD_AWAKENED.eventDeathPrevention": "Ainda preciso continuar esperando……",
+  // 沉没宝库事件中对金币的独白
+  "STS1TO2CARD-RED_IRONCLAD_AWAKENED.goldMonologue": "[sine]Essas moedas…… talvez possam ser úteis……[/sine]",
+  // 物主形容词，用于动态文本
+  "STS1TO2CARD-RED_IRONCLAD_AWAKENED.possessiveAdjective": "seu",
+  // 宾语代词
+  "STS1TO2CARD-RED_IRONCLAD_AWAKENED.pronounObject": "ele",
+  // 所有格代词
+  "STS1TO2CARD-RED_IRONCLAD_AWAKENED.pronounPossessive": "seu",
+  // 主语代词
+  "STS1TO2CARD-RED_IRONCLAD_AWAKENED.pronounSubject": "ele",
+  // 角色名（标题用）
+  "STS1TO2CARD-RED_IRONCLAD_AWAKENED.title": "Ironclad",
+  // 角色名（作宾语用）
+  "STS1TO2CARD-RED_IRONCLAD_AWAKENED.titleObject": "Ironclad",
+  // 解锁条件文案，{Prerequisite} 会被替换
+  "STS1TO2CARD-RED_IRONCLAD_AWAKENED.unlockText": "Jogue uma partida com [pink]{Prerequisite}[/pink] para desbloquear este personagem.",
+
+
+  // 混沌香气事件中的内心独白
+  "STS1TO2CARD-GREEN_SILENT.aromaPrinciple": "[sine][blue]……esperar……[/blue][/sine]",
+  // 多人模式：存活时回合结束对白
+  "STS1TO2CARD-GREEN_SILENT.banter.alive.endTurnPing": "……",
+  // 多人模式：死亡后回合结束对白
+  "STS1TO2CARD-GREEN_SILENT.banter.dead.endTurnPing": "……",
+  // 自定义模式文本
+  "STS1TO2CARD-GREEN_SILENT.cardsModifierDescription": "As cartas da Silent agora aparecerão nas recompensas e nas lojas.",
+  // 卡池名字
+  "STS1TO2CARD-GREEN_SILENT.cardsModifierTitle": "Silent",
+  // 角色选择界面描述
+  "STS1TO2CARD-GREEN_SILENT.description": "[green]Fantasma da Névoa[/green]: Baralho da 1ª geração.\nUma caçadora mortal das Terras Nebulosas.\nUsa adagas e venenos para eliminar inimigos.",
+  // 死亡时事件对话
+  "STS1TO2CARD-GREEN_SILENT.eventDeathPrevention": "Ainda preciso continuar esperando……",
+  // 沉没宝库事件中对金币的独白
+  "STS1TO2CARD-GREEN_SILENT.goldMonologue": "[sine]Essas moedas…… talvez possam ser úteis……[/sine]",
+  // 物主形容词，用于动态文本
+  "STS1TO2CARD-GREEN_SILENT.possessiveAdjective": "sua",
+  // 宾语代词
+  "STS1TO2CARD-GREEN_SILENT.pronounObject": "ela",
+  // 所有格代词
+  "STS1TO2CARD-GREEN_SILENT.pronounPossessive": "sua",
+  // 主语代词
+  "STS1TO2CARD-GREEN_SILENT.pronounSubject": "ela",
+  // 角色名（标题用）
+  "STS1TO2CARD-GREEN_SILENT.title": "Silent",
+  // 角色名（作宾语用）
+  "STS1TO2CARD-GREEN_SILENT.titleObject": "Silent",
+  // 解锁条件文案，{Prerequisite} 会被替换
+  "STS1TO2CARD-GREEN_SILENT.unlockText": "Jogue uma partida com [pink]{Prerequisite}[/pink] para desbloquear este personagem.",
+
+
+
+  // 混沌香气事件中的内心独白
+  "STS1TO2CARD-GREEN_SILENT_AWAKENED.aromaPrinciple": "[sine][blue]……esperar……[/blue][/sine]",
+  // 多人模式：存活时回合结束对白
+  "STS1TO2CARD-GREEN_SILENT_AWAKENED.banter.alive.endTurnPing": "……",
+  // 多人模式：死亡后回合结束对白
+  "STS1TO2CARD-GREEN_SILENT_AWAKENED.banter.dead.endTurnPing": "……",
+  // 自定义模式文本
+  "STS1TO2CARD-GREEN_SILENT_AWAKENED.cardsModifierDescription": "As cartas da Silent agora aparecerão nas recompensas e nas lojas.",
+  // 卡池名字
+  "STS1TO2CARD-GREEN_SILENT_AWAKENED.cardsModifierTitle": "Silent",
+  // 角色选择界面描述
+  "STS1TO2CARD-GREEN_SILENT_AWAKENED.description": "[green]Eu despertei[/green]: Baralhos da 1ª e 2ª geração.\nUma caçadora mortal das Terras Nebulosas além da Espiral.\nUsa adagas e venenos para eliminar inimigos.",
+  // 死亡时事件对话
+  "STS1TO2CARD-GREEN_SILENT_AWAKENED.eventDeathPrevention": "Ainda preciso continuar esperando……",
+  // 沉没宝库事件中对金币的独白
+  "STS1TO2CARD-GREEN_SILENT_AWAKENED.goldMonologue": "[sine]Essas moedas…… talvez possam ser úteis……[/sine]",
+  // 物主形容词，用于动态文本
+  "STS1TO2CARD-GREEN_SILENT_AWAKENED.possessiveAdjective": "sua",
+  // 宾语代词
+  "STS1TO2CARD-GREEN_SILENT_AWAKENED.pronounObject": "ela",
+  // 所有格代词
+  "STS1TO2CARD-GREEN_SILENT_AWAKENED.pronounPossessive": "sua",
+  // 主语代词
+  "STS1TO2CARD-GREEN_SILENT_AWAKENED.pronounSubject": "ela",
+  // 角色名（标题用）
+  "STS1TO2CARD-GREEN_SILENT_AWAKENED.title": "Silent",
+  // 角色名（作宾语用）
+  "STS1TO2CARD-GREEN_SILENT_AWAKENED.titleObject": "Silent",
+  // 解锁条件文案，{Prerequisite} 会被替换
+  "STS1TO2CARD-GREEN_SILENT_AWAKENED.unlockText": "Jogue uma partida com [pink]{Prerequisite}[/pink] para desbloquear este personagem."
+}

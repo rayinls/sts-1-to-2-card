@@ -14,7 +14,7 @@ namespace sts1to2card.src.red.cards;
 
 public sealed class RedClash : CardModel
 {
-    // 使用标准列表而不是反编译生成的 ReadOnlySingleElementList
+
     protected override IEnumerable<DynamicVar> CanonicalVars => new List<DynamicVar> { new DamageVar(14m, ValueProp.Move) };
 
     // 手牌中只有攻击牌时可打
@@ -23,7 +23,7 @@ public sealed class RedClash : CardModel
     protected override bool ShouldGlowGoldInternal => IsPlayable;
 
     public RedClash()
-        : base(0, CardType.Attack, CardRarity.Uncommon, TargetType.AnyEnemy) // 改为 Uncommon
+        : base(0, CardType.Attack, CardRarity.Common, TargetType.AnyEnemy) // 改为 Uncommon
     {
     }
 

@@ -2,71 +2,14 @@
     "COLORLESS_PANACEA.description": "获得{ArtifactPower:diff()}层[gold]人工制品[/gold]。",
     "COLORLESS_PANACEA.title": "万灵药",
 
-    "GREEN_DOPPELGANGER.description": "下一回合，抽{Cards:diff()}张牌，获得{Energy:energyIcons()}。",
-    "GREEN_DOPPELGANGER.title": "双重存在",
+    "RED_CORRUPTION.description": "所有技能牌耗能变为0{energyPrefix:energyIcons(1)}。\n所有技能牌在被打出时被[gold]消耗[/gold]",
+    "RED_CORRUPTION.title": "腐化",
 
-    "GREEN_FLYING_KNEE.description": "造成{Damage:diff()}点伤害。在下一回合获得{Energy:energyIcons()}。",
-    "GREEN_FLYING_KNEE.title": "飞膝",
+    "RED_DARK_EMBRACE.description": "每当有一张牌被[gold]消耗[/gold]时，抽1张牌。",
+    "RED_DARK_EMBRACE.title": "黑暗之拥",
 
-    "GREEN_GLASS_KNIFE.description": "造成{Damage:diff()}点伤害2次。这张牌每被打出一次，在本场战斗中其基础伤害减少2。",
-    "GREEN_GLASS_KNIFE.title": "玻璃刀刃",
-
-    "GREEN_SNEAKY_STRIKE.description": "造成{Damage:diff()}点伤害。\n如果你在本回合丢弃过牌，获得{Energy:energyIcons()}。",
-    "GREEN_SNEAKY_STRIKE.title": "隐秘打击",
-
-    "GREEN_EVISCERATE.description": "你在这个回合每丢弃一张牌，耗能减少{energyPrefix:energyIcons(1)}。\n对目标造成{Damage:diff()}点伤害3次。",
-    "GREEN_EVISCERATE.title": "内脏切除",
-
-    "GREEN_ALL_OUT_ATTACK.description": "对所有敌人造成{Damage:diff()}点伤害。\n丢弃一张随机[gold]手牌[/gold]。",
-    "GREEN_ALL_OUT_ATTACK.title": "全力攻击",
-
-    "GREEN_ENDLESS_AGONY.description": "造成{Damage:diff()}点伤害。\n每当你抽到这张牌，都将一张其复制品加入你的[gold]手牌[/gold]。",
-    "GREEN_ENDLESS_AGONY.title": "无尽苦痛",
-
-    "GREEN_CHOKE.description": "造成{Damage:diff()}点伤害。\n你在这个回合内每打出一张牌，该名敌人都会失去{GreenChokePower:diff()}点生命。",
-    "GREEN_CHOKE.title": "勒脖",
-
-    "GREEN_A_THOUSAND_CUTS.description": "你每打出一张牌，就对所有敌人造成{GreenAThousandCutsPower:diff()}点伤害。",
-    "GREEN_A_THOUSAND_CUTS.title": "凌迟",
-
-    "GREEN_BANE.description": "造成{Damage:diff()}点伤害。\n如果敌人有[gold]中毒[/gold]状态，则再次造成{Damage:diff()}点伤害。",
-    "GREEN_BANE.title": "灾祸",
-
-    "GREEN_DIE_DIE_DIE.description": "对所有敌人造成{Damage:diff()}点伤害。",
-    "GREEN_DIE_DIE_DIE.title": "死吧死吧死吧",
-
-    "GREEN_RIDDLE_WITH_HOLES.description": "造成{Damage:diff()}点伤害{Repeat:diff()}次。",
-    "GREEN_RIDDLE_WITH_HOLES.title": "千穿百刺",
-
-    "GREEN_TERROR.description": "给予{Power:diff()}层[gold]易伤[/gold]。",
-    "GREEN_TERROR.title": "恐怖",
-
-    "GREEN_VENOMOLOGY.description": "获得一瓶随机药水。",
-    "GREEN_VENOMOLOGY.title": "炼制药水",
-   
-    "GREEN_QUICK_SLASH.description": "造成{Damage:diff()}点伤害。\n抽{Cards:diff()}张牌。",
-    "GREEN_QUICK_SLASH.title": "快斩",
-
-    "GREEN_HEEL_HOOK.description": "造成{Damage:diff()}点伤害。\n如果敌人有[gold]虚弱[/gold]状态，获得{Energy:energyIcons()}并且抽1张牌。",
-    "GREEN_HEEL_HOOK.title": "足跟勾",
-
-    "GREEN_MASTERFUL_STAB.description": "造成{Damage:diff()}点伤害。\n你每次受到伤害，这张牌的耗能增加{energyPrefix:energyIcons(1)}。",
-    "GREEN_MASTERFUL_STAB.title": "精巧刺击",
-
-    "GREEN_UNLOAD.description": "造成{Damage:diff()}点伤害。\n丢弃所有非攻击牌。",
-    "GREEN_UNLOAD.title": "乾坤一掷",
-
-    "GREEN_CONCENTRATE.description": "丢弃{Cards:diff()}张牌。\n获得{Energy:energyIcons()}。",
-    "GREEN_CONCENTRATE.title": "全神贯注",
-
-    "GREEN_CRIPPLING_POISON.description": "给予所有敌人{PoisonPower:diff()}层[gold]中毒[/gold]和2层[gold]虚弱[/gold]。",
-    "GREEN_CRIPPLING_POISON.title": "致残毒云",
-    
-    "GREEN_CATALYST.description": "将一名敌人的[gold]中毒[/gold]层数{IfUpgraded:show:变为三倍|翻倍}。",
-    "GREEN_CATALYST.title": "催化剂",
-
-    "GREEN_CORPSE_EXPLOSION.description": "给予{PoisonPower:diff()}层[gold]中毒[/gold]。\n当这名敌人死亡时，对所有敌人造成等于其最大生命值的伤害。",
-    "GREEN_CORPSE_EXPLOSION.title": "尸爆术",
+    "RED_BLUDGEON.description": "造成{Damage:diff()}点伤害。",
+    "RED_BLUDGEON.title": "重锤",
 
 	"RED_RECKLESS_CHARGE.description": "造成{Damage:diff()}点伤害。\n将一张[gold]晕眩[/gold]放入你的[gold]抽牌堆[/gold]中。",
 	"RED_RECKLESS_CHARGE.title": "无谋冲锋",
@@ -87,7 +30,7 @@
     "RED_HEAVY_BLADE.description": "造成{CalculatedDamage:diff()}点伤害。\n[gold]力量[/gold]在重刃上发挥{StrengthMultiplier:diff()}倍效果。",
     "RED_HEAVY_BLADE.title": "重刃",
 
-    "RED_METALLICIZE.description": "在你的回合结束时，获得[blue]{RedMetallicizePower:diff()}[/blue]点[gold]格挡[/gold]。",
+    "RED_METALLICIZE.description": "在你的回合结束时，获得{RedMetallicizePower:diff()}点[gold]格挡[/gold]。",
     "RED_METALLICIZE.title": "金属化",
 
     "RED_PUMMEL.description": "造成{Damage:diff()}点伤害{Hits:diff()}次。",
@@ -162,6 +105,81 @@
         
     "RED_BRUTALITY.description": "在你的回合开始时，你失去1点生命，抽{RedBrutalityPower:diff()}张牌。",
 	"RED_BRUTALITY.title": "残暴",
+
+    "GREEN_WRAITH_FORM.description": "获得{IntangiblePower:diff()}[gold]无实体[/gold]。\n在每回合开始时，失去{WraithFormPower:diff()}点[gold]敏捷[/gold]。",
+    "GREEN_WRAITH_FORM.title": "幽魂形态",
+
+    "GREEN_PHANTASMAL_KILLER.description": "在你的下个回合，你所有的攻击伤害翻倍。",
+    "GREEN_PHANTASMAL_KILLER.title": "幻影杀手",
+    
+    "GREEN_CALCULATED_GAMBLE.description": "丢弃所有[gold]手牌[/gold],\n然后抽相同数量的牌。",
+    "GREEN_CALCULATED_GAMBLE.title": "计算下注",
+
+    "GREEN_DOPPELGANGER.description": "下一回合，抽{Cards:diff()}张牌，获得{Energy:energyIcons()}。",
+    "GREEN_DOPPELGANGER.title": "双重存在",
+
+    "GREEN_FLYING_KNEE.description": "造成{Damage:diff()}点伤害。在下一回合获得{Energy:energyIcons()}。",
+    "GREEN_FLYING_KNEE.title": "飞膝",
+
+    "GREEN_GLASS_KNIFE.description": "造成{Damage:diff()}点伤害2次。这张牌每被打出一次，在本场战斗中其基础伤害减少2。",
+    "GREEN_GLASS_KNIFE.title": "玻璃刀刃",
+
+    "GREEN_SNEAKY_STRIKE.description": "造成{Damage:diff()}点伤害。\n如果你在本回合丢弃过牌，获得{Energy:energyIcons()}。",
+    "GREEN_SNEAKY_STRIKE.title": "隐秘打击",
+
+    "GREEN_EVISCERATE.description": "你在这个回合每丢弃一张牌，耗能减少1{energyPrefix:energyIcons(1)}。\n对目标造成{Damage:diff()}点伤害3次。",
+    "GREEN_EVISCERATE.title": "内脏切除",
+
+    "GREEN_ALL_OUT_ATTACK.description": "对所有敌人造成{Damage:diff()}点伤害。\n丢弃一张随机[gold]手牌[/gold]。",
+    "GREEN_ALL_OUT_ATTACK.title": "全力攻击",
+
+    "GREEN_ENDLESS_AGONY.description": "造成{Damage:diff()}点伤害。\n每当你抽到这张牌，都将一张其复制品加入你的[gold]手牌[/gold]。",
+    "GREEN_ENDLESS_AGONY.title": "无尽苦痛",
+
+    "GREEN_CHOKE.description": "造成{Damage:diff()}点伤害。\n你在这个回合内每打出一张牌，该名敌人都会失去{GreenChokePower:diff()}点生命。",
+    "GREEN_CHOKE.title": "勒脖",
+
+    "GREEN_A_THOUSAND_CUTS.description": "你每打出一张牌，就对所有敌人造成{GreenAThousandCutsPower:diff()}点伤害。",
+    "GREEN_A_THOUSAND_CUTS.title": "凌迟",
+
+    "GREEN_BANE.description": "造成{Damage:diff()}点伤害。\n如果敌人有[gold]中毒[/gold]状态，则再次造成{Damage:diff()}点伤害。",
+    "GREEN_BANE.title": "灾祸",
+
+    "GREEN_DIE_DIE_DIE.description": "对所有敌人造成{Damage:diff()}点伤害。",
+    "GREEN_DIE_DIE_DIE.title": "死吧死吧死吧",
+
+    "GREEN_RIDDLE_WITH_HOLES.description": "造成{Damage:diff()}点伤害{Repeat:diff()}次。",
+    "GREEN_RIDDLE_WITH_HOLES.title": "千穿百刺",
+
+    "GREEN_TERROR.description": "给予{Power:diff()}层[gold]易伤[/gold]。",
+    "GREEN_TERROR.title": "恐怖",
+
+    "GREEN_VENOMOLOGY.description": "获得一瓶随机药水。",
+    "GREEN_VENOMOLOGY.title": "炼制药水",
+   
+    "GREEN_QUICK_SLASH.description": "造成{Damage:diff()}点伤害。\n抽{Cards:diff()}张牌。",
+    "GREEN_QUICK_SLASH.title": "快斩",
+
+    "GREEN_HEEL_HOOK.description": "造成{Damage:diff()}点伤害。\n如果敌人有[gold]虚弱[/gold]状态，获得{Energy:energyIcons()}并且抽1张牌。",
+    "GREEN_HEEL_HOOK.title": "足跟勾",
+
+    "GREEN_MASTERFUL_STAB.description": "造成{Damage:diff()}点伤害。\n你每次受到伤害，这张牌的耗能增加{energyPrefix:energyIcons(1)}。",
+    "GREEN_MASTERFUL_STAB.title": "精巧刺击",
+
+    "GREEN_UNLOAD.description": "造成{Damage:diff()}点伤害。\n丢弃所有非攻击牌。",
+    "GREEN_UNLOAD.title": "乾坤一掷",
+
+    "GREEN_CONCENTRATE.description": "丢弃{Cards:diff()}张牌。\n获得{Energy:energyIcons()}。",
+    "GREEN_CONCENTRATE.title": "全神贯注",
+
+    "GREEN_CRIPPLING_POISON.description": "给予所有敌人{PoisonPower:diff()}层[gold]中毒[/gold]和2层[gold]虚弱[/gold]。",
+    "GREEN_CRIPPLING_POISON.title": "致残毒云",
+    
+    "GREEN_CATALYST.description": "将一名敌人的[gold]中毒[/gold]层数{IfUpgraded:show:变为三倍|翻倍}。",
+    "GREEN_CATALYST.title": "催化剂",
+
+    "GREEN_CORPSE_EXPLOSION.description": "给予{PoisonPower:diff()}层[gold]中毒[/gold]。\n当这名敌人死亡时，对所有敌人造成等于其最大生命值的伤害。",
+    "GREEN_CORPSE_EXPLOSION.title": "尸爆术",
 
     "RED_DUAL_WIELD.description": "选择一张攻击牌或能力牌。将{IfUpgraded:show:{Cards}张此牌的复制品|一张此牌的复制品}加入你的[gold]手牌[/gold]。",
     "RED_DUAL_WIELD.selectionScreenPrompt": "选择一张牌复制。",
