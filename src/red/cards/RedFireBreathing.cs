@@ -50,6 +50,6 @@ public sealed class RedFireBreathing : CardModel
 
     protected override void OnUpgrade()
     {
-        base.DynamicVars["RedFireBreathingPower"].UpgradeValueBy(2m);
+        base.DynamicVars["RedFireBreathingPower"].UpgradeValueBy(4m);
     }
 }

@@ -1,0 +1,127 @@
+using HarmonyLib;
+using MegaCrit.Sts2.Core.Context;
+using MegaCrit.Sts2.Core.Entities.Players;
+using MegaCrit.Sts2.Core.Models.Events;
+using MegaCrit.Sts2.Core.Runs;
+using MegaCrit.Sts2.Core.Saves.Managers;
+using System.Collections.Generic;
+using System.Reflection;
+using sts1to2card.src.RedIronclad;
+using sts1to2card.src.RedIroncladAwakened;
+using sts1to2card.src.GreenSilent;
+using sts1to2card.src.GreenSilentAwakened;
+using MegaCrit.Sts2.Core.Entities.Ancients;
+using Godot;
+
+namespace sts1to2card.scripts
+{
+    [HarmonyPatch]
+    public static class MyCharacterPatches
+    {
+        private static readonly HashSet<System.Type> MyCharacterTypes = new()
+        {
+            typeof(RedIronclad),
+            typeof(RedIroncladAwakened),
+            typeof(GreenSilent),
+            typeof(GreenSilentAwakened)
+        };
+
+        private static bool IsMyCharacter(Player player)
+        {
+            return player?.Character != null && MyCharacterTypes.Contains(player.Character.GetType());
+        }
+
+        // Boss时间线跳过
+        [HarmonyPatch(typeof(ProgressSaveManager), "ObtainCharUnlockEpoch")]
+        public static class Patch_ObtainCharUnlockEpoch
+        {
+            private static bool Prefix(Player localPlayer, int act)
+            {
+                if (IsMyCharacter(localPlayer))
+                {
+                    GD.Print("[MyMod] Skipping boss Epoch");
+                    return false;
+                }
+                return true;
+            }
+        }
+
+
+        // Architect 修复版
+        [HarmonyPatch(typeof(TheArchitect), "WinRun")]
+        public static class Patch_TheArchitect_WinRun
+        {
+            private static void Prefix(TheArchitect __instance)
+            {
+                var runState = RunManager.Instance.DebugOnlyGetState();
+                if (runState == null)
+                    return;
+
+                var localPlayer = LocalContext.GetMe(runState);
+                if (!IsMyCharacter(localPlayer))
+                    return;
+
+                GD.Print("[MyMod]  Architect before WinRun");
+
+                TryFixDialogue(__instance);
+            }
+
+            private static void TryFixDialogue(TheArchitect instance)
+            {
+                var field = typeof(TheArchitect).GetField("_dialogue",
+                    BindingFlags.Instance | BindingFlags.NonPublic);
+
+                if (field == null)
+                    return;
+
+                var current = field.GetValue(instance);
+
+                //  只在 null 时修复（安全）
+                if (current != null)
+                    return;
+
+                GD.Print("[MyMod] Injecting fallback dialogue");
+
+                var dialogue = new AncientDialogue(
+                    new string[] { "event:/sfx/ancients/architect/architect_vo_generic" }
+                )
+                {
+                    EndAttackers = (ArchitectAttackers)0
+                };
+
+                field.SetValue(instance, dialogue);
+            }
+        }
+
+
+        //  精英击败 跳过
+        [HarmonyPatch(typeof(ProgressSaveManager), "CheckFifteenElitesDefeatedEpoch")]
+        public static class Patch_CheckFifteenElitesDefeatedEpoch
+        {
+            private static bool Prefix(Player localPlayer)
+            {
+                if (IsMyCharacter(localPlayer))
+                {
+                    GD.Print("[MyMod] Skipping FifteenElites");
+                    return false;
+                }
+                return true;
+            }
+        }
+
+        // 15 Boss击败 跳过
+        [HarmonyPatch(typeof(ProgressSaveManager), "CheckFifteenBossesDefeatedEpoch")]
+        public static class Patch_CheckFifteenBossesDefeatedEpoch
+        {
+            private static bool Prefix(Player localPlayer)
+            {
+                if (IsMyCharacter(localPlayer))
+                {
+                    GD.Print("[MyMod] Skipping FifteenBosses");
+                    return false;
+                }
+                return true;
+            }
+        }
+    }
+}

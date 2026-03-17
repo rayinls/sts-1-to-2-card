@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using Godot;
+using HarmonyLib;
 using MegaCrit.Sts2.Core.Modding;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.CardPools;
@@ -19,14 +21,18 @@ public static class CardExclusionConfig
     // 需要从觉醒牌池排除的红色卡牌列表
     public static HashSet<string> RedExcludedFromAwakened = new HashSet<string>
     {
-        "RedBludgeon",      // 排除刚才的重击卡
+        "RedBludgeon",      // 1代重锤
+        "RedHemokinesis",   // 1代御血
+        "BLOODLETTING",     // 1代放血
         // 示例: "RedClothesline", "RedThunderclap" 等
     };
     
     // 需要从觉醒牌池排除的绿色卡牌列表（如果需要）
     public static HashSet<string> GreenExcludedFromAwakened = new HashSet<string>
     {
-		"GreenCalculatedGamble",
+		"GreenCalculatedGamble",   // 1代计算下注
+        "GreenBladeDance",         // 1代小刀
+        "GreenPhantasmalKiller",   // 1代幻影杀手
         // "GreenSomeCard",  // 可以添加要排除的绿色卡牌
     };
 }
@@ -38,6 +44,26 @@ public class Entry
     {
         RegisterCards();
         RegisterRelics();
+        // 应用 Harmony 补丁
+        ApplyHarmonyPatches();
+    }
+
+    private static void ApplyHarmonyPatches()
+    {
+        try
+        {
+            var harmony = new Harmony("sts1to2card.patches");
+            harmony.PatchAll(Assembly.GetExecutingAssembly());
+            GD.Print("[MyMod] Harmony patches applied successfully.");
+
+            // 可选：输出补丁数量
+            var patchedMethods = harmony.GetPatchedMethods().ToList();
+            GD.Print($"[MyMod] Total patched methods: {patchedMethods.Count}");
+        }
+        catch (Exception ex)
+        {
+            GD.PrintErr($"[MyMod] Failed to apply Harmony patches: {ex}");
+        }
     }
 
     private static void RegisterCards()

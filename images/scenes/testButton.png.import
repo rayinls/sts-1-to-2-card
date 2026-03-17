@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c5qren3yye1el"
-path="res://.godot/imported/green_distraction.png-d15367b9c5d1135dcb1391efce4e1e73.ctex"
+uid="uid://cq1c4m3x0ceca"
+path="res://.godot/imported/testButton.png-bf00ebc9fb10455ae02bdb4c7fd972b7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/packed/card_portraits/greensilent/green_distraction.png"
-dest_files=["res://.godot/imported/green_distraction.png-d15367b9c5d1135dcb1391efce4e1e73.ctex"]
+source_file="res://images/scenes/testButton.png"
+dest_files=["res://.godot/imported/testButton.png-bf00ebc9fb10455ae02bdb4c7fd972b7.ctex"]
 
 [params]
 

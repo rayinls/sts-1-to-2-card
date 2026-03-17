@@ -2,6 +2,6 @@
   "pck_name": "sts1to2card",
   "name": "1代卡牌还原",
   "author": "心碎是太傻",
-  "description": "当前为战士和贼添加所有1代卡牌",
-  "version": "0.4.0"
+  "description": "添加4个角色，分别对应战士和贼一二代卡池",
+  "version": "0.4.1"
 }

@@ -47,7 +47,6 @@ namespace sts1to2card.src.GreenSilent
 				ModelDb.Card<Afterimage>(),          // 残影
 				ModelDb.Card<Backflip>(),            // 后空翻
 				ModelDb.Card<Backstab>(),            // 背刺
-				ModelDb.Card<BladeDance>(),          // 刀刃之舞
 				ModelDb.Card<Blur>(),                // 模糊
 				ModelDb.Card<BouncingFlask>(),       // 弹跳药瓶
 				ModelDb.Card<BulletTime>(),          // 子弹时间
@@ -60,10 +59,8 @@ namespace sts1to2card.src.GreenSilent
 				ModelDb.Card<DefendSilent>(),        // 防御
 				ModelDb.Card<Deflect>(),             // 偏斜
 				ModelDb.Card<DodgeAndRoll>(),        // 闪避翻滚
-				ModelDb.Card<Envenom>(),             // 涂毒
 				ModelDb.Card<EscapePlan>(),          // 逃脱计划
 				ModelDb.Card<Expertise>(),           // 专家技艺
-				ModelDb.Card<FanOfKnives>(),         // 飞刀风暴
 				ModelDb.Card<Finisher>(),            // 终结
 				ModelDb.Card<Flechettes>(),          // 飞镖
 				ModelDb.Card<Footwork>(),            // 步法

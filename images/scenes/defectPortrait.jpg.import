@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dpcqd0icbslor"
-valid=false
+uid="uid://ux0caua40qam"
+path="res://.godot/imported/defectPortrait.jpg-5ac90627d7f547baec96a21a23f3ac17.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
-source_file="res://images/scenes/Red_Ironclad.png"
+source_file="res://images/scenes/defectPortrait.jpg"
+dest_files=["res://.godot/imported/defectPortrait.jpg-5ac90627d7f547baec96a21a23f3ac17.ctex"]
 
 [params]
 

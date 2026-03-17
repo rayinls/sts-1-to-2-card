@@ -18,6 +18,8 @@ namespace sts1to2card.src.RedIroncladAwakened
 
         public override string PlaceholderID => "ironclad";
 
+     	public override string CustomCharacterSelectIconPath => "res://images/scenes/red_ironclad_awakened_button.png";
+
         public override Color NameColor => Color;
 
         public override int StartingHp => 80;
@@ -25,13 +27,13 @@ namespace sts1to2card.src.RedIroncladAwakened
         public override int StartingGold => 99;
 
         public override CharacterGender Gender => CharacterGender.Feminine;
-        // 使用原版铁甲战士卡池
+        // 卡池
         public override CardPoolModel CardPool => ModelDb.CardPool<RedIroncladAwakenedCardPool>();
 
-        // 使用原版铁甲战士遗物池
+        // 遗物池
         public override RelicPoolModel RelicPool => ModelDb.RelicPool<IroncladRelicPool>();
 
-        // 使用原版铁甲战士药水池
+        // 药水池
         public override PotionPoolModel PotionPool => ModelDb.PotionPool<IroncladPotionPool>();
 
         // 原版铁甲战士初始卡组
@@ -57,34 +59,13 @@ namespace sts1to2card.src.RedIroncladAwakened
             ModelDb.Relic<BurningBlood>()
         };
 
-        // 直接引用原版铁甲战士视觉
-	    public override string CustomVisualPath => SceneHelper.GetScenePath("creature_visuals/ironclad");
-
-        public override string CustomIconTexturePath => ImageHelper.GetImagePath("ui/top_panel/character_icon_ironclad.png");
-        public override string CustomCharacterSelectIconPath => ImageHelper.GetImagePath("packed/character_select/char_select_ironclad.png");
-
-        public override string CustomCharacterSelectLockedIconPath => ImageHelper.GetImagePath("packed/character_select/char_select_ironclad_locked.png");
-
-        public override string CustomMapMarkerPath => ImageHelper.GetImagePath("packed/map/icons/map_marker_ironclad.png");
-
-        public override string CustomArmPointingTexturePath => ImageHelper.GetImagePath("ui/hands/multiplayer_hand_ironclad_point.png");
-
-        public override string CustomArmRockTexturePath => ImageHelper.GetImagePath("ui/hands/multiplayer_hand_ironclad_rock.png");
-
-        public override string CustomArmPaperTexturePath => ImageHelper.GetImagePath("ui/hands/multiplayer_hand_ironclad_paper.png");
-
-        public override string CustomArmScissorsTexturePath => ImageHelper.GetImagePath("ui/hands/multiplayer_hand_ironclad_scissors.png");
-
-        public override List<string> GetArchitectAttackVfx()
-        {
-            return new List<string>()
-            {
-            "vfx/vfx_attack_blunt",
-            "vfx/vfx_heavy_blunt",
+        // 攻击建筑师的攻击特效列表
+        public override List<string> GetArchitectAttackVfx() => [
             "vfx/vfx_attack_slash",
-            "vfx/vfx_bloody_impact",
-            "vfx/vfx_rock_shatter"
-            };
-        }
+            "vfx/vfx_heavy_slash",
+            "vfx/vfx_attack_blunt"
+        ];
+        // 过渡音效。这个不能删。
+        public override string CharacterTransitionSfx => "event:/sfx/ui/wipe_ironclad";
     }
 }

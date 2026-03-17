@@ -69,7 +69,7 @@ namespace sts1to2card.src.GreenSilentAwakened
 				ModelDb.Card<Deflect>(),
 				ModelDb.Card<DodgeAndRoll>(),
 				ModelDb.Card<EchoingSlash>(),
-				ModelDb.Card<Envenom>(),
+				//ModelDb.Card<Envenom>(), 采用1代涂毒
 				ModelDb.Card<EscapePlan>(),
 				ModelDb.Card<Expertise>(),
 				ModelDb.Card<Expose>(),

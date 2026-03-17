@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c5qren3yye1el"
-path="res://.godot/imported/green_distraction.png-d15367b9c5d1135dcb1391efce4e1e73.ctex"
+uid="uid://dbjsl225a7afq"
+path="res://.godot/imported/tinyRightArrow.png-7c7355656bdcc9b00ffee7de3f74cee9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/packed/card_portraits/greensilent/green_distraction.png"
-dest_files=["res://.godot/imported/green_distraction.png-d15367b9c5d1135dcb1391efce4e1e73.ctex"]
+source_file="res://images/scenes/tinyRightArrow.png"
+dest_files=["res://.godot/imported/tinyRightArrow.png-7c7355656bdcc9b00ffee7de3f74cee9.ctex"]
 
 [params]
 

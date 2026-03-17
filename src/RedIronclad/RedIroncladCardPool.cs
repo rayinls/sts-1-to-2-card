@@ -47,7 +47,6 @@ namespace sts1to2card.src.RedIronclad
                 ModelDb.Card<Barricade>(),          // 防御壁垒
                 ModelDb.Card<Bash>(),               // 重击
                 ModelDb.Card<BattleTrance>(),       // 战斗狂热
-                ModelDb.Card<Bloodletting>(),       // 放血
                 ModelDb.Card<BodySlam>(),           // 肉搏冲撞
                 ModelDb.Card<Break>(),              // 打破
                 ModelDb.Card<BurningPact>(),        // 灼热契约
@@ -60,7 +59,6 @@ namespace sts1to2card.src.RedIronclad
                 ModelDb.Card<FlameBarrier>(),       // 火焰屏障
                 ModelDb.Card<Havoc>(),              // 混乱
                 ModelDb.Card<Headbutt>(),           // 猛撞
-                ModelDb.Card<Hemokinesis>(),        // 血液操控
                 ModelDb.Card<Impervious>(),         // 无坚不摧
                 ModelDb.Card<InfernalBlade>(),      // 地狱之刃
                 ModelDb.Card<Inflame>(),            // 激怒

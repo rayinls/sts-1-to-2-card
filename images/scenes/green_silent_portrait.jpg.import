@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c5qren3yye1el"
-path="res://.godot/imported/green_distraction.png-d15367b9c5d1135dcb1391efce4e1e73.ctex"
+uid="uid://ckwqupgvsjxek"
+path="res://.godot/imported/green_silent_portrait.jpg-2303a06c4cadad7fb6052536231c05e0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/packed/card_portraits/greensilent/green_distraction.png"
-dest_files=["res://.godot/imported/green_distraction.png-d15367b9c5d1135dcb1391efce4e1e73.ctex"]
+source_file="res://images/scenes/green_silent_portrait.jpg"
+dest_files=["res://.godot/imported/green_silent_portrait.jpg-2303a06c4cadad7fb6052536231c05e0.ctex"]
 
 [params]
 

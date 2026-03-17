@@ -17,6 +17,9 @@ public class RedIronclad : PlaceholderCharacterModel
 
 	public override string PlaceholderID => "ironclad";
 
+    public override string CustomCharacterSelectBg => "res://images/scenes/red_ironclad_portrait.tscn";
+
+	public override string CustomCharacterSelectIconPath => "res://images/scenes/red_ironclad_button.png";
 	public override Color NameColor => Color;
 
 	public override int StartingHp => 80;
@@ -47,4 +50,7 @@ public class RedIronclad : PlaceholderCharacterModel
 
 	public override IReadOnlyList<RelicModel> StartingRelics => new List<RelicModel> { (RelicModel)(object)ModelDb.Relic<BurningBlood>() };
 
+	// 攻击建筑师的攻击特效列表
+	// 过渡音效。这个不能删。
+	public override string CharacterTransitionSfx => "event:/sfx/ui/wipe_ironclad";
 }

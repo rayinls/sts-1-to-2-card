@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -28,6 +29,12 @@ namespace sts1to2card.src.green.cards
             }
         }
 
+        // ✅ 正确升级写法（改为 +4）
+        protected override void OnUpgrade()
+        {
+            base.DynamicVars.Damage.UpgradeValueBy(4m);
+        }
+
         protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
         {
             await CreatureCmd.TriggerAnim(Owner.Creature, "Attack", Owner.Character.AttackAnimDelay);
@@ -39,11 +46,17 @@ namespace sts1to2card.src.green.cards
                 .Execute(choiceContext);
 
             CardPile pile = PileType.Hand.GetPile(Owner);
-            CardModel cardModel = Owner.RunState.Rng.CombatCardSelection.NextItem(pile.Cards);
 
-            if (cardModel != null)
+            // 排除自身
+            var validCards = pile.Cards.Where(c => c != this).ToList();
+
+            if (validCards.Count > 0)
             {
-                await CardCmd.Discard(choiceContext, cardModel);
+                CardModel cardModel = Owner.RunState.Rng.CombatCardSelection.NextItem(validCards);
+                if (cardModel != null)
+                {
+                    await CardCmd.Discard(choiceContext, cardModel);
+                }
             }
         }
     }
