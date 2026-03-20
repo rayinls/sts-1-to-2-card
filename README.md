@@ -26,7 +26,9 @@ Mod 中共添加了 **4 个角色**，分别对应：
 
 ## 免责声明
 
-- 所有原作版权归 **MegaCrit** 所有  ，本 Mod 仅为复刻与移植 
+- 所有原作版权归 **MegaCrit** 所有  ，本 Mod 仅为复刻与移植
+- 禁止任何形式的商业行为
+- 
 
 ---
 
@@ -67,6 +69,7 @@ Some card logic is based on and adapted from the original STS2 source code, and 
 ## Disclaimer
 
 - All original content copyright belongs to **MegaCrit**.  This mod is a remake and port
+- Any form of commercial use is strictly prohibited
 
 ---
 
