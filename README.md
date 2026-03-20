@@ -38,17 +38,17 @@ Mod 中共添加了 **4 个角色**，分别对应：
 
 ---
 
-# Slay the Spire 2 – STS1 Warrior & Hunter Remake Mod
+# Slay the Spire 2 – STS1 Ironclad and Silent Remake Mod
 
 ## Overview
 
-This mod faithfully recreates the **Warrior** and **Hunter** characters from **Slay the Spire 1** and ports them into **Slay the Spire 2**.  
+This mod faithfully recreates the **Ironclad** and **Silent** characters from **Slay the Spire 1** and ports them into **Slay the Spire 2**.  
 The mod adds **4 characters** in total, corresponding to:
 
-1. Warrior (STS1)  
-2. Warrior Awakened/Fusion Card Pool (STS2)  
-3. Hunter (STS1)  
-4. Hunter Awakened/Fusion Card Pool (STS2)  
+1. Ironclad (STS1)  
+2. Ironclad Awakened/Fusion Card Pool (STS2)  
+3. Silent (STS1)  
+4. Silent Awakened/Fusion Card Pool (STS2)  
 
 Some card logic is based on and adapted from the original STS2 source code, and all scripts and gameplay logic have been rewritten for Godot.
 
