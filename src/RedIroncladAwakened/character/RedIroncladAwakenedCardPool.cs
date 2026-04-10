@@ -81,7 +81,6 @@ namespace sts1to2card.src.RedIroncladAwakened.character
                 ModelDb.Card<FightMe>(),
                 ModelDb.Card<FlameBarrier>(),
                 ModelDb.Card<ForgottenRitual>(),
-                ModelDb.Card<Grapple>(),
                 ModelDb.Card<Havoc>(),
                 ModelDb.Card<Headbutt>(),
                 ModelDb.Card<Hellraiser>(),
