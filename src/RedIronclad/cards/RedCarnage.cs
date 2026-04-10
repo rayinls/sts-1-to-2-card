@@ -41,8 +41,7 @@ public sealed class RedCarnage : CardModel
 
         await CreatureCmd.TriggerAnim(base.Owner.Creature, "Cast", base.Owner.Character.AttackAnimDelay);
 
-        ((Node)NCombatRoom.Instance?.CombatVfxContainer)
-            .AddChildSafely(NSpikeSplashVfx.Create(cardPlay.Target));
+        NCombatRoom.Instance?.CombatVfxContainer.AddChildSafely(NSpikeSplashVfx.Create(cardPlay.Target));
 
         await DamageCmd.Attack(base.DynamicVars.Damage.BaseValue)
             .FromCard(this)

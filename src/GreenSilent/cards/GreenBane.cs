@@ -28,7 +28,7 @@ namespace sts1to2card.src.GreenSilent.cards
 		{
 			get
 			{
-				CombatState combatState = base.CombatState;
+				CombatState? combatState = base.CombatState;
 				if (combatState == null)
 				{
 					return false;

@@ -26,7 +26,7 @@ namespace sts1to2card.src.GreenSilent.cards
             );
 
             var selected = await CardSelectCmd.FromHand(choiceContext, Owner, prefs, null, this);
-            CardModel card = selected.FirstOrDefault();
+            CardModel? card = selected.FirstOrDefault();
 
             if (card != null)
             {

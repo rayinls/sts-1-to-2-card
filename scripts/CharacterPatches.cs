@@ -56,7 +56,7 @@ namespace sts1to2card.scripts
                     return;
 
                 var localPlayer = LocalContext.GetMe(runState);
-                if (!IsMyCharacter(localPlayer))
+                if (localPlayer != null && !IsMyCharacter(localPlayer))
                     return;
 
                 TryFixDialogue(__instance);

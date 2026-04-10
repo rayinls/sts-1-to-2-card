@@ -45,19 +45,22 @@ namespace sts1to2card.src.GreenSilent.powers
 				return;
 			}
 
-			NCombatRoom instance = NCombatRoom.Instance;
-			foreach (Creature target in targets)
+			NCombatRoom? instance = NCombatRoom.Instance;
+			if (instance != null)
 			{
-				NCreature node = instance?.GetCreatureNode(target);
-				if (node == null)
+
+				foreach (Creature target in targets)
 				{
-					continue;
+					NCreature? node = instance.GetCreatureNode(target);
+					if (node == null)
+					{
+						continue;
+					}
+
+					NGaseousImpactVfx? vfx = NGaseousImpactVfx.Create(node.VfxSpawnPosition, new Color("83eb85"));
+					instance.CombatVfxContainer.AddChildSafely(vfx);
 				}
-
-				NGaseousImpactVfx vfx = NGaseousImpactVfx.Create(node.VfxSpawnPosition, new Color("83eb85"));
-				instance.CombatVfxContainer.AddChildSafely(vfx);
 			}
-
 			await Cmd.CustomScaledWait(0.2f, 0.4f, false, default(CancellationToken));
 
 			await CreatureCmd.Damage(
