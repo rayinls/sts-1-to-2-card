@@ -12,6 +12,7 @@ using sts1to2card.src.GreenSilent.character;
 using sts1to2card.src.GreenSilentAwakened.character;
 using MegaCrit.Sts2.Core.Entities.Ancients;
 using Godot;
+using sts1to2card.src.BlueDefect.character;
 
 namespace sts1to2card.scripts
 {
@@ -23,7 +24,8 @@ namespace sts1to2card.scripts
             typeof(RedIronclad),
             typeof(RedIroncladAwakened),
             typeof(GreenSilent),
-            typeof(GreenSilentAwakened)
+            typeof(GreenSilentAwakened),
+            typeof(BlueDefect)
         };
 
         private static bool IsMyCharacter(Player player)
@@ -56,7 +58,7 @@ namespace sts1to2card.scripts
                     return;
 
                 var localPlayer = LocalContext.GetMe(runState);
-                if (!IsMyCharacter(localPlayer))
+                if (localPlayer != null && !IsMyCharacter(localPlayer))
                     return;
 
                 TryFixDialogue(__instance);

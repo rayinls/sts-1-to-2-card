@@ -27,31 +27,31 @@ public class GreenSilent : PlaceholderCharacterModel
 
 	public override int StartingHp => 70;
 
-	public override CharacterGender Gender => (CharacterGender)2;
+	public override CharacterGender Gender => CharacterGender.Feminine;
 
-	public override CardPoolModel CardPool => (CardPoolModel)(object)ModelDb.CardPool<GreenSilentCardPool>();
+	public override CardPoolModel CardPool => ModelDb.CardPool<GreenSilentCardPool>();
 
-	public override RelicPoolModel RelicPool => (RelicPoolModel)(object)ModelDb.RelicPool<SilentRelicPool>();
+	public override RelicPoolModel RelicPool => ModelDb.RelicPool<SilentRelicPool>();
 
-	public override PotionPoolModel PotionPool => (PotionPoolModel)(object)ModelDb.PotionPool<SilentPotionPool>();
+	public override PotionPoolModel PotionPool => ModelDb.PotionPool<SilentPotionPool>();
 
 	public override IEnumerable<CardModel> StartingDeck => new List<CardModel>
 	{
-		(CardModel)(object)ModelDb.Card<StrikeSilent>(),
-		(CardModel)(object)ModelDb.Card<StrikeSilent>(),
-		(CardModel)(object)ModelDb.Card<StrikeSilent>(),
-		(CardModel)(object)ModelDb.Card<StrikeSilent>(),
-		(CardModel)(object)ModelDb.Card<StrikeSilent>(),
-		(CardModel)(object)ModelDb.Card<DefendSilent>(),
-		(CardModel)(object)ModelDb.Card<DefendSilent>(),
-		(CardModel)(object)ModelDb.Card<DefendSilent>(),
-		(CardModel)(object)ModelDb.Card<DefendSilent>(),
-		(CardModel)(object)ModelDb.Card<DefendSilent>(),
-		(CardModel)(object)ModelDb.Card<Survivor>(),
-		(CardModel)(object)ModelDb.Card<Neutralize>()
+		ModelDb.Card<StrikeSilent>(),
+		ModelDb.Card<StrikeSilent>(),
+		ModelDb.Card<StrikeSilent>(),
+		ModelDb.Card<StrikeSilent>(),
+		ModelDb.Card<StrikeSilent>(),
+		ModelDb.Card<DefendSilent>(),
+		ModelDb.Card<DefendSilent>(),
+		ModelDb.Card<DefendSilent>(),
+		ModelDb.Card<DefendSilent>(),
+		ModelDb.Card<DefendSilent>(),
+		ModelDb.Card<Survivor>(),
+		ModelDb.Card<Neutralize>()
 	};
 
-	public override IReadOnlyList<RelicModel> StartingRelics => new List<RelicModel> { (RelicModel)(object)ModelDb.Relic<RingOfTheSnake>() };
+	public override IReadOnlyList<RelicModel> StartingRelics => new List<RelicModel> { ModelDb.Relic<RingOfTheSnake>() };
 
     // 攻击建筑师的攻击特效列表
 	// 过渡音效。这个不能删。

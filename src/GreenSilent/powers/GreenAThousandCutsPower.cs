@@ -36,15 +36,16 @@ namespace sts1to2card.src.GreenSilent.powers
         }
 
         public override async Task AfterCardPlayed(PlayerChoiceContext context, CardPlay cardPlay)
-        {
+        {     
+            if (base.Owner.CombatState == null)
+                return;
+
             if (cardPlay.Card.Owner != base.Owner.Player)
                 return;
 
-            int damage;
-
             if (base.GetInternalData<Data>()
                 .amountsForPlayedCards
-                .Remove(cardPlay.Card, out damage))
+                .Remove(cardPlay.Card, out int damage))
             {
                 if (damage > 0)
                 {

@@ -42,7 +42,7 @@ public sealed class RedSpotWeakness : CardModel
         };
 
     public RedSpotWeakness()
-        : base(1, CardType.Skill, CardRarity.Uncommon, TargetType.Self)
+        : base(1, CardType.Skill, CardRarity.Uncommon, TargetType.AnyEnemy)
     {
     }
 
@@ -54,9 +54,7 @@ public sealed class RedSpotWeakness : CardModel
             "Cast",
             base.Owner.Character.CastAnimDelay);
 
-        // 自动判断敌人意图 → 获得力量
-        bool shouldGain = base.CombatState?.HittableEnemies
-            .Any(e => e.Monster?.IntendsToAttack ?? false) ?? false;
+        bool shouldGain = base.CurrentTarget != null && base.CurrentTarget.Monster?.IntendsToAttack == true;
 
         if (shouldGain)
         {

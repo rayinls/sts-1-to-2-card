@@ -32,7 +32,7 @@ namespace sts1to2card.src.red.cards
 				{
 					new CalculationBaseVar(14m),
 					new ExtraDamageVar(1m),
-					new CalculatedDamageVar(ValueProp.Move).WithMultiplier((CardModel card, Creature _) =>
+					new CalculatedDamageVar(ValueProp.Move).WithMultiplier((CardModel card, Creature? _) =>
 						(card != null && card.IsMutable && card.Owner != null)
 							? card.Owner.Creature.GetPowerAmount<StrengthPower>() * (card.DynamicVars["StrengthMultiplier"].BaseValue - 1m)
 							: 0m),
@@ -57,7 +57,7 @@ namespace sts1to2card.src.red.cards
 			await CreatureCmd.TriggerAnim(base.Owner.Creature, "Attack", base.Owner.Character.AttackAnimDelay);
 
 			// 地刺特效
-			NCombatRoom instance = NCombatRoom.Instance;
+			NCombatRoom? instance = NCombatRoom.Instance;
 			if (instance != null)
 			{
 				instance.CombatVfxContainer.AddChildSafely(

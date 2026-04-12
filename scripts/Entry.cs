@@ -8,6 +8,7 @@ using MegaCrit.Sts2.Core.Modding;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.CardPools;
 using MegaCrit.Sts2.Core.Models.RelicPools;
+using sts1to2card.src.BlueDefect.character;
 using sts1to2card.src.GreenSilent.character;
 using sts1to2card.src.GreenSilentAwakened.character;
 using sts1to2card.src.RedIronclad.character;
@@ -91,6 +92,10 @@ public class Entry
                 {
                     ModHelper.AddModelToPool(typeof(GreenSilentAwakenedCardPool), item);
                 }
+            }
+            else if (name.StartsWith("Blue"))
+            {
+                ModHelper.AddModelToPool(typeof(BlueDefectCardPool), item);
             }
         }
     }

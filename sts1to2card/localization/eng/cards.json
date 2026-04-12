@@ -198,5 +198,53 @@
     "GREEN_DISTRACTION.title": "Distraction",
 
     "GREEN_CALTROPS.description": "Whenever you are attacked, deal {ThornsPower:diff()} damage back.",
-    "GREEN_CALTROPS.title": "Caltrops"
+    "GREEN_CALTROPS.title": "Caltrops",
+
+    "BLUE_AGGREGATE.description": "Gain {Energy:energyIcons()} for every {Cards:diff()} cards in your draw pile.",
+    "BLUE_AGGREGATE.title": "Aggregate",
+
+    "BLUE_AUTO_SHIELDS.title": "Auto Shields",
+    "BLUE_AUTO_SHIELDS.description": "If you have no [gold]Block[/gold], gain {Block:diff()} [gold]Block[/gold].",
+  
+    "BLUE_BLIZZARD.title": "Blizzard",
+    "BLUE_BLIZZARD.description": "Deal damage equal to {Times:diff()} times the number of [gold]Frost Channeled[/gold] this combat to ALL enemies. ({Repeat:diff()})",
+
+    "BLUE_BULLSEYE.title": "Bullseye",
+    "BLUE_BULLSEYE.description": "Deal {Damage:diff()} damage.\nApply 1 [gold]Lock-On[/gold].",
+
+    "BLUE_CONSUME.title": "Consume",
+    "BLUE_CONSUME.description": "Gain {Focus:diff()} [gold]Focus[/gold]. Lose 1 Orb slot.",
+
+    "BLUE_DOOM_AND_GLOOM.title": "Doom and Gloom",
+    "BLUE_DOOM_AND_GLOOM.description": "Deal {Damage:diff()} damage to ALL enemies.\nChannel 1 [gold]Dark[/gold].",
+
+    "BLUE_FORCE_FIELD.title": "Force Field",
+    "BLUE_FORCE_FIELD.description": "Costs 1 less {Energy:energyIcons()} for each Power card player this combat.\nGain {Block:diff()} [gold]Block[/gold].",
+
+    "BLUE_HEATSINKS.title": "Heatsinks",
+    "BLUE_HEATSINKS.description": "Whenever you play a Power card, draw {Cards:diff()} card(s).",
+
+    "BLUE_MELTER.title": "Melter",
+    "BLUE_MELTER.description": "Remove all [gold]Block[/gold] from the enemy.\nDeal {Damage:diff()} damage.",
+    
+    "BLUE_RECURSION.title": "Recursion",
+    "BLUE_RECURSION.description": "[gold]Evoke[/gold] your next Orb. [gold]Channel[/gold] the Orb that was just [gold]Evoked[/gold].",
+
+    "BLUE_STEAM_BARRIER.title": "Steam Barrier",
+    "BLUE_STEAM_BARRIER.description": "Gain {Block:diff()} [gold]Block[/gold]. Decrease this card's [gold]Block[/gold] by 1 this combat.",
+
+    "BLUE_STREAMLINE.title": "Streamline",
+    "BLUE_STREAMLINE.description": "Deal {Damage:diff()} damage.\nReduce this card's cost by 1 this combat.",
+    
+    "BLUE_RECYCLE.title": "Recycle",
+    "BLUE_RECYCLE.description": "[gold]Exhaust[/gold] a card. Gain {Energy:energyIcons()} equal to its cost.",
+
+    "BLUE_REINFORCED_BODY.title": "Reinforced Body",
+    "BLUE_REINFORCED_BODY.description": "Gain {Block:diff()} [gold]Block[/gold] X times.",
+
+    "BLUE_REPROGRAM.title": "Reprogram",
+    "BLUE_REPROGRAM.description": "Lose {Focus:diff()} [gold]Focus[/gold].\nGain {Str:diff()} [gold]Strength[/gold].\nGain {Dex:diff()} [gold]Dexterity[/gold].",
+
+    "BLUE_SEEK.title": "Seek",
+    "BLUE_SEEK.description": "Put {Cards:diff()} card(s) from your draw pile into your hand.\n[gold]Exhaust[/gold]"
 }

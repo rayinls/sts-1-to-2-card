@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://c4wblj3fxux6g"]
+
+[ext_resource type="Texture2D" uid="uid://drpdcd5jrq1rm" path="res://images/scenes/blue_defect_portrait.jpg" id="1_keuyj"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("1_keuyj")
+expand_mode = 5
+stretch_mode = 5

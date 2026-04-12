@@ -51,8 +51,11 @@ public sealed class RedSeverSoul : CardModel
         await CreatureCmd.TriggerAnim(base.Owner.Creature, "Cast", base.Owner.Character.AttackAnimDelay);
 
         // 播放特效
-        ((Node)(object)NCombatRoom.Instance?.CombatVfxContainer)
-            .AddChildSafely((Node?)(object)NSpikeSplashVfx.Create(cardPlay.Target));
+        if (NCombatRoom.Instance != null)
+        {
+            NSpikeSplashVfx? splash = NSpikeSplashVfx.Create(cardPlay.Target);
+            NCombatRoom.Instance.CombatVfxContainer.AddChildSafely(splash);
+        }
 
         // 对目标造成伤害，并使用 Stomp 风格的特效和音效
         await DamageCmd.Attack(base.DynamicVars.Damage.BaseValue)

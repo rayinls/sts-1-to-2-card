@@ -37,5 +37,9 @@
 
 	"RED_COMBUST_POWER.description": "At the end of your turn, lose HP and deal damage to ALL enemies.",
 	"RED_COMBUST_POWER.smartDescription": "At the end of your turn, lose 1 HP and deal [blue]{Amount}[/blue] damage to ALL enemies.",
-	"RED_COMBUST_POWER.title": "Combust"
+	"RED_COMBUST_POWER.title": "Combust",
+
+	"BLUE_HEATSINKS_POWER.description": "Whenever you play a Power, draw cards.",
+	"BLUE_HEATSINKS_POWER.smartDescription": "Whenever you play a Power, draw [blue]{Amount}[/blue] card(s).",
+	"BLUE_HEATSINKS_POWER.title": "Heatsinks"
 }

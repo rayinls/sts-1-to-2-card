@@ -34,13 +34,13 @@ namespace sts1to2card.src.red.cards
 
 		protected override IEnumerable<string> ExtraRunAssetPaths => NGroundFireVfx.AssetPaths;
 
-		public override async Task OnEnqueuePlayVfx(Creature target)
+		public override async Task OnEnqueuePlayVfx(Creature? target)
 		{
 			if (target != null)
 			{
 				//2, 1, 12,每2个等级一团火，最多12
 				int flameStacks = Math.Clamp(1 + base.CurrentUpgradeLevel / 2, 1, 12);
-				NCombatRoom instance = NCombatRoom.Instance;
+				NCombatRoom? instance = NCombatRoom.Instance;
 				if (instance != null)
 				{
 					for (int i = 0; i < flameStacks; i++)
@@ -72,16 +72,12 @@ namespace sts1to2card.src.red.cards
 			{
 				await Cmd.Wait(0.03f, false);
 				VfxCmd.PlayOnCreature(cardPlay.Target, "vfx/vfx_attack_blunt");
-				NCombatRoom instance = NCombatRoom.Instance;
-				if (instance != null)
-				{
-					instance.CombatVfxContainer.AddChildSafely(NFireBurstVfx.Create(cardPlay.Target, flameScale));
-				}
-				NGame instance2 = NGame.Instance;
-				if (instance2 != null)
-				{
-					instance2.ScreenShake(shakeStrength, ShakeDuration.Short, shakeAngle);
-				}
+
+				NCombatRoom? instance = NCombatRoom.Instance;
+				instance?.CombatVfxContainer.AddChildSafely(NFireBurstVfx.Create(cardPlay.Target, flameScale));
+
+				NGame? instance2 = NGame.Instance;
+				instance2?.ScreenShake(shakeStrength, ShakeDuration.Short, shakeAngle);
 			}
 		}
 

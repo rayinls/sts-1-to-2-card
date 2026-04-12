@@ -35,18 +35,18 @@ public class GreenSilentAwakened : PlaceholderCharacterModel
 
 	public override IEnumerable<CardModel> StartingDeck => new List<CardModel>
 	{
-		(CardModel)(object)ModelDb.Card<StrikeSilent>(),
-		(CardModel)(object)ModelDb.Card<StrikeSilent>(),
-		(CardModel)(object)ModelDb.Card<StrikeSilent>(),
-		(CardModel)(object)ModelDb.Card<StrikeSilent>(),
-		(CardModel)(object)ModelDb.Card<StrikeSilent>(),
-		(CardModel)(object)ModelDb.Card<DefendSilent>(),
-		(CardModel)(object)ModelDb.Card<DefendSilent>(),
-		(CardModel)(object)ModelDb.Card<DefendSilent>(),
-		(CardModel)(object)ModelDb.Card<DefendSilent>(),
-		(CardModel)(object)ModelDb.Card<DefendSilent>(),
-		(CardModel)(object)ModelDb.Card<Survivor>(),
-		(CardModel)(object)ModelDb.Card<Neutralize>()
+		ModelDb.Card<StrikeSilent>(),
+		ModelDb.Card<StrikeSilent>(),
+		ModelDb.Card<StrikeSilent>(),
+		ModelDb.Card<StrikeSilent>(),
+		ModelDb.Card<StrikeSilent>(),
+		ModelDb.Card<DefendSilent>(),
+		ModelDb.Card<DefendSilent>(),
+		ModelDb.Card<DefendSilent>(),
+		ModelDb.Card<DefendSilent>(),
+		ModelDb.Card<DefendSilent>(),
+		ModelDb.Card<Survivor>(),
+		ModelDb.Card<Neutralize>()
 	};
 
 	public override IReadOnlyList<RelicModel> StartingRelics => new List<RelicModel> { (RelicModel)(object)ModelDb.Relic<RingOfTheSnake>() };

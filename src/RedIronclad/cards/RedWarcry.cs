@@ -37,7 +37,7 @@ public sealed class RedWarcry : CardModel
         IEnumerable<CardModel> selected =
             await CardSelectCmd.FromHand(choiceContext, base.Owner, prefs, null, this);
 
-        CardModel card = selected.FirstOrDefault();
+        CardModel? card = selected.FirstOrDefault();
 
         if (card != null)
         {

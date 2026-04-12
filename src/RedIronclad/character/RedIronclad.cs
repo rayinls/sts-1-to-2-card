@@ -31,29 +31,29 @@ public class RedIronclad : PlaceholderCharacterModel
 
 	public override int StartingHp => 80;
 
-	public override CharacterGender Gender => (CharacterGender)2;
+	public override CharacterGender Gender => CharacterGender.Masculine;
 
-	public override CardPoolModel CardPool => (CardPoolModel)(object)ModelDb.CardPool<RedIroncladCardPool>();
+	public override CardPoolModel CardPool => ModelDb.CardPool<RedIroncladCardPool>();
 
-	public override RelicPoolModel RelicPool => (RelicPoolModel)(object)ModelDb.RelicPool<IroncladRelicPool>();
+	public override RelicPoolModel RelicPool => ModelDb.RelicPool<IroncladRelicPool>();
 
-	public override PotionPoolModel PotionPool => (PotionPoolModel)(object)ModelDb.PotionPool<IroncladPotionPool>();
+	public override PotionPoolModel PotionPool => ModelDb.PotionPool<IroncladPotionPool>();
 
 	public override IEnumerable<CardModel> StartingDeck => new List<CardModel>
 	{
-		(CardModel)(object)ModelDb.Card<StrikeIronclad>(),
-		(CardModel)(object)ModelDb.Card<StrikeIronclad>(),
-		(CardModel)(object)ModelDb.Card<StrikeIronclad>(),
-		(CardModel)(object)ModelDb.Card<StrikeIronclad>(),
-		(CardModel)(object)ModelDb.Card<StrikeIronclad>(),
-		(CardModel)(object)ModelDb.Card<DefendIronclad>(),
-		(CardModel)(object)ModelDb.Card<DefendIronclad>(),
-		(CardModel)(object)ModelDb.Card<DefendIronclad>(),
-		(CardModel)(object)ModelDb.Card<DefendIronclad>(),
-		(CardModel)(object)ModelDb.Card<Bash>()
+		ModelDb.Card<StrikeIronclad>(),
+		ModelDb.Card<StrikeIronclad>(),
+		ModelDb.Card<StrikeIronclad>(),
+		ModelDb.Card<StrikeIronclad>(),
+		ModelDb.Card<StrikeIronclad>(),
+		ModelDb.Card<DefendIronclad>(),
+		ModelDb.Card<DefendIronclad>(),
+		ModelDb.Card<DefendIronclad>(),
+		ModelDb.Card<DefendIronclad>(),
+		ModelDb.Card<Bash>()
 	};
 
-	public override IReadOnlyList<RelicModel> StartingRelics => new List<RelicModel> { (RelicModel)(object)ModelDb.Relic<BurningBlood>() };
+	public override IReadOnlyList<RelicModel> StartingRelics => new List<RelicModel> { ModelDb.Relic<BurningBlood>() };
 
 	// 攻击建筑师的攻击特效列表
 	// 过渡音效。这个不能删。

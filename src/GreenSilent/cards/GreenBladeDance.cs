@@ -43,6 +43,9 @@ namespace sts1to2card.src.GreenSilent.cards
 
         protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
         {
+            if (CombatState == null)
+                return;
+
             await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
 
             for (int i = 0; i < DynamicVars.Cards.IntValue; i++)

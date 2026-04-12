@@ -57,41 +57,51 @@ public sealed class GreenCripplingPoison : CardModel
 
         await Cmd.CustomScaledWait(0.2f, 0.4f, false, default(CancellationToken));
 
-        await PowerCmd.Apply<PoisonPower>(
-            base.CombatState.HittableEnemies,
-            base.DynamicVars.Poison.BaseValue,
-            base.Owner.Creature,
-            this
-        );
+        if (base.CombatState != null)
+        {
+            await PowerCmd.Apply<PoisonPower>(
+                base.CombatState.HittableEnemies,
+                base.DynamicVars.Poison.BaseValue,
+                base.Owner.Creature,
+                this
+            );
 
-        await PowerCmd.Apply<WeakPower>(
-            base.CombatState.HittableEnemies,
-            base.DynamicVars.Weak.BaseValue,
-            base.Owner.Creature,
-            this
-        );
+            await PowerCmd.Apply<WeakPower>(
+                base.CombatState.HittableEnemies,
+                base.DynamicVars.Weak.BaseValue,
+                base.Owner.Creature,
+                this
+            );
+        }
     }
 
     private void SpawnVfx()
     {
-        NCombatRoom instance = NCombatRoom.Instance;
-        Node node = instance?.CombatVfxContainer;
+        NCombatRoom? instance = NCombatRoom.Instance;
+        if (instance == null)
+        {
+            return;
+        }
+
+        Node node = instance.CombatVfxContainer;
 
         if (node != null)
         {
-            NSmokyVignetteVfx vignette =
+            NSmokyVignetteVfx? vignette =
                 NSmokyVignetteVfx.Create(
                     new Color(0.8f, 0.8f, 0.3f, 0.66f),
                     new Color(0f, 4f, 0f, 0.33f)
                 );
 
             node.AddChildSafely(vignette);
-
-            foreach (Creature creature in base.CombatState.HittableEnemies)
+            if (base.CombatState != null)
             {
-                node.AddChildSafely(
-                    NSmokePuffVfx.Create(creature, NSmokePuffVfx.SmokePuffColor.Green)
-                );
+                foreach (Creature creature in base.CombatState.HittableEnemies)
+                {
+                    node.AddChildSafely(
+                        NSmokePuffVfx.Create(creature, NSmokePuffVfx.SmokePuffColor.Green)
+                    );
+                }
             }
         }
     }

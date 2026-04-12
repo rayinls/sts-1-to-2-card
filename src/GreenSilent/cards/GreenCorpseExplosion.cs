@@ -36,12 +36,12 @@ public sealed class GreenCorpseExplosion : CardModel
 	{
 		ArgumentNullException.ThrowIfNull(cardPlay.Target, nameof(cardPlay.Target));
 
-		NCombatRoom instance = NCombatRoom.Instance;
-		NCreature ncreature = instance?.GetCreatureNode(cardPlay.Target);
+		NCombatRoom? instance = NCombatRoom.Instance;
+		NCreature? ncreature = instance?.GetCreatureNode(cardPlay.Target);
 		if (ncreature != null)
 		{
-			NGaseousImpactVfx vfx = NGaseousImpactVfx.Create(ncreature.VfxSpawnPosition, new Color("83eb85"));
-			instance.CombatVfxContainer.AddChildSafely(vfx);
+			NGaseousImpactVfx? vfx = NGaseousImpactVfx.Create(ncreature.VfxSpawnPosition, new Color("83eb85"));
+			instance?.CombatVfxContainer.AddChildSafely(vfx);
 		}
 
 		await CreatureCmd.TriggerAnim(base.Owner.Creature, "Cast", base.Owner.Character.CastAnimDelay);

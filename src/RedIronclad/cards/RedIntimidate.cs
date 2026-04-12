@@ -43,6 +43,9 @@ public sealed class RedIntimidate : CardModel
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
+        if (CombatState == null)
+            return;
+            
         // 播放施法动作
         await CreatureCmd.TriggerAnim(base.Owner.Creature, "Cast", base.Owner.Character.CastAnimDelay);
 

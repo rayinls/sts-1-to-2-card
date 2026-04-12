@@ -68,8 +68,8 @@ namespace sts1to2card.src.red.cards
             Creature target,
             DamageResult result,
             ValueProp props,
-            Creature dealer = null,
-            CardModel cardSource = null)
+            Creature? dealer = null,
+            CardModel? cardSource = null)
         {
             if (target != Owner.Creature || result.UnblockedDamage <= 0m)
                 return Task.CompletedTask;

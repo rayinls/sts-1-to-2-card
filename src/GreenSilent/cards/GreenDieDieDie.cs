@@ -31,6 +31,9 @@ namespace sts1to2card.src.GreenSilent.cards
 
 		protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
 		{
+			if (CombatState == null)
+				return;
+				
 			await DamageCmd.Attack(base.DynamicVars.Damage.BaseValue).FromCard(this).TargetingAllOpponents(base.CombatState)
 				.WithHitFx("vfx/vfx_attack_slash", null, null)
 				.Execute(choiceContext);

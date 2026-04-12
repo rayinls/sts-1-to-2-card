@@ -37,6 +37,9 @@ namespace sts1to2card.src.GreenSilent.cards
 
         protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
         {
+            if (CombatState == null)
+                return;
+
             await CreatureCmd.TriggerAnim(Owner.Creature, "Attack", Owner.Character.AttackAnimDelay);
 
             await DamageCmd.Attack(DynamicVars.Damage.BaseValue)
@@ -52,7 +55,7 @@ namespace sts1to2card.src.GreenSilent.cards
 
             if (validCards.Count > 0)
             {
-                CardModel cardModel = Owner.RunState.Rng.CombatCardSelection.NextItem(validCards);
+                CardModel? cardModel = Owner.RunState.Rng.CombatCardSelection.NextItem(validCards);
                 if (cardModel != null)
                 {
                     await CardCmd.Discard(choiceContext, cardModel);

@@ -23,7 +23,7 @@ public sealed class GreenDistraction : CardModel
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        CardModel cardModel = CardFactory.GetDistinctForCombat(
+        CardModel? cardModel = CardFactory.GetDistinctForCombat(
             base.Owner,
             (from c in base.Owner.Character.CardPool.GetUnlockedCards(base.Owner.UnlockState, base.Owner.RunState.CardMultiplayerConstraint)
              where c.Type == CardType.Skill

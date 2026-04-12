@@ -36,16 +36,20 @@ namespace sts1to2card.src.red.cards
 
         protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
         {
+            if (CombatState == null)
+                return;
+
+             // 播放玩家施法动画延迟
             DamageVar damage = base.DynamicVars.Damage;
-            var container = (Node)NCombatRoom.Instance?.CombatVfxContainer;
+            var container = NCombatRoom.Instance?.CombatVfxContainer;
 
             // --- 玩家火焰 ---
-            container.AddChildSafely(NGroundFireVfx.Create(base.Owner.Creature));
-
+            container?.AddChildSafely(NGroundFireVfx.Create(base.Owner.Creature));
+    
             // --- 敌人火焰 ---
             foreach (Creature enemy in base.CombatState.Enemies)
             {
-                container.AddChildSafely(NGroundFireVfx.Create(enemy));
+                container?.AddChildSafely(NGroundFireVfx.Create(enemy));
             }
 
             // 播放玩家施法动画延迟
