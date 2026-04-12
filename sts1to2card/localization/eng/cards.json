@@ -203,11 +203,11 @@
     "BLUE_AGGREGATE.description": "Gain {Energy:energyIcons()} for every {Cards:diff()} cards in your draw pile.",
     "BLUE_AGGREGATE.title": "Aggregate",
 
-      "BLUE_AUTO_SHIELDS.title": "Auto Shields",
+    "BLUE_AUTO_SHIELDS.title": "Auto Shields",
     "BLUE_AUTO_SHIELDS.description": "If you have no [gold]Block[/gold], gain {Block:diff()} [gold]Block[/gold].",
   
     "BLUE_BLIZZARD.title": "Blizzard",
-    "BLUE_BLIZZARD.description": "Deal damage equal to {Damage:diff()} times the number of [gold]Frost Channeled[/gold] this combat to ALL enemies. ({Times:diff()})",
+    "BLUE_BLIZZARD.description": "Deal damage equal to {Times:diff()} times the number of [gold]Frost Channeled[/gold] this combat to ALL enemies. ({Repeat:diff()})",
 
     "BLUE_BULLSEYE.title": "Bullseye",
     "BLUE_BULLSEYE.description": "Deal {Damage:diff()} damage.\nApply 1 [gold]Lock-On[/gold].",
@@ -234,6 +234,14 @@
     "BLUE_STEAM_BARRIER.description": "Gain {Block:diff()} [gold]Block[/gold]. Decrease this card's [gold]Block[/gold] by 1 this combat.",
 
     "BLUE_STREAMLINE.title": "Streamline",
-    "BLUE_STREAMLINE.description": "Deal {Damage:diff()} damage.\nReduce this card's cost by 1 this combat."
+    "BLUE_STREAMLINE.description": "Deal {Damage:diff()} damage.\nReduce this card's cost by 1 this combat.",
+    
+    "BLUE_RECYCLE.title": "Recycle",
+    "BLUE_RECYCLE.description": "[gold]Exhaust[/gold] a card. Gain {Energy:energyIcons()} equal to its cost.",
 
+    "BLUE_REINFORCED_BODY.title": "Reinforced Body",
+    "BLUE_REINFORCED_BODY.description": "Gain {Block:diff()} [gold]Block[/gold] X times.",
+
+    "BLUE_REPROGRAM.title": "Reprogram",
+    "BLUE_REPROGRAM.description": "Lose {Focus:diff()} [gold]Focus[/gold].\nGain {Str:diff()} [gold]Strength[/gold].\nGain {Dex:diff()} [gold]Dexterity[/gold]."
 }

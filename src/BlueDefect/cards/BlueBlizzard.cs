@@ -26,8 +26,9 @@ namespace sts1to2card.src.BlueDefect.cards
         
             new List<DynamicVar>
             {
-                new DamageVar(2m, ValueProp.Move),
-                new DynamicVar(Times, 2m)
+                new DynamicVar(Times, 2m),
+                new RepeatVar(0),
+                new DamageVar(0m, ValueProp.Unpowered)
             };
         
         protected override void OnUpgrade()
@@ -43,7 +44,7 @@ namespace sts1to2card.src.BlueDefect.cards
             if (player != Owner || orb.GetType() != typeof(FrostOrb))
                 return;
 
-            base.DynamicVars[Times].UpgradeValueBy(1m);
+            base.DynamicVars.Repeat.UpgradeValueBy(1m);
         }
 
         protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
@@ -54,10 +55,8 @@ namespace sts1to2card.src.BlueDefect.cards
             if (cardPlay.Target == null)
                 return;
 
-            for (int i = 0; i < base.DynamicVars["Channeled"].IntValue; i++)
-            {
-                await CreatureCmd.Damage(choiceContext, cardPlay.Target, base.DynamicVars.Damage, this);
-            }
+            base.DynamicVars.Damage.BaseValue = base.DynamicVars.Repeat.IntValue * base.DynamicVars[Times].IntValue;
+            await CreatureCmd.Damage(choiceContext, cardPlay.Target, base.DynamicVars.Damage, this);
         }
     }
 }

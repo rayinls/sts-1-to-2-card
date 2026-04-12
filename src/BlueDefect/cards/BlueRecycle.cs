@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MegaCrit.Sts2.Core.CardSelection;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Orbs;
@@ -12,13 +13,12 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace sts1to2card.src.BlueDefect.cards
 {
-    public sealed class BlueRecursion : CardModel
+    public sealed class BlueRecycle : CardModel
     {
-        public BlueRecursion()
-            : base(1, CardType.Skill, CardRarity.Common, TargetType.Self, true)
+        public BlueRecycle()
+            : base(1, CardType.Skill, CardRarity.Uncommon, TargetType.Self, true)
         {
         }
-
         protected override void OnUpgrade()
         {
             base.EnergyCost.UpgradeBy(-1);
@@ -29,18 +29,19 @@ namespace sts1to2card.src.BlueDefect.cards
             if (CombatState == null)
                 return;
 
-            OrbQueue? orbQueue = Owner.PlayerCombatState?.OrbQueue;
+            CardModel? selection = (await CardSelectCmd.FromHand(
+                prefs: new CardSelectorPrefs(base.SelectionScreenPrompt, 1),
+                context: choiceContext,
+                player: base.Owner,
+                filter: null,
+                source: this
+            )).FirstOrDefault();
 
-            if (orbQueue == null)
-                return;
-
-            OrbModel? orb = orbQueue.Orbs.FirstOrDefault();
-
-            if (orb == null)
-                return;
-                
-            await OrbCmd.EvokeNext(choiceContext, Owner);
-            await OrbCmd.Channel(choiceContext, orb, Owner);
+            if (selection != null)
+            {
+                int energy = selection.EnergyCost.Canonical;
+                await PlayerCmd.GainEnergy(energy, base.Owner);
+            }
         }
     }
 }
